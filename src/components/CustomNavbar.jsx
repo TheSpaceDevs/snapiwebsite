@@ -25,9 +25,9 @@ export default class CustomNavbar extends Component {
                             API Documentation
                         </NavItem>
                         <NavDropdown eventKey={4} title="Social" id="basic-nav-dropdown">
-                            <MenuItem eventKey={4.1}>Discord</MenuItem>
+                            <MenuItem eventKey={4.1} href="https://discord.gg/9FaQdny">Discord</MenuItem>
                             <MenuItem eventKey={4.2}>Reddit</MenuItem>
-                            <MenuItem eventKey={4.3}>Twitter</MenuItem>
+                            <MenuItem eventKey={4.3} href="https://twitter.com/the_snapi">Twitter</MenuItem>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
