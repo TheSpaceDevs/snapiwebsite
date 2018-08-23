@@ -6,12 +6,12 @@ import './Home.css';
 class Home extends Component {
     render() {
         return (
-            <Grid>
+            <div>
                 <Jumbotron>
                     <h2>Spaceflight News API</h2>
-                    <p>Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
+                    <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
-                    <p>Ready to begin?</p>
+                    <p style={{color:'white'}}>Ready to begin?</p>
                     <Link to="/apidocs">
                         <Button bsStyle="primary">API Docs</Button>
                     </Link>
@@ -19,6 +19,7 @@ class Home extends Component {
                         <Button bsStyle="primary">About</Button>
                     </Link>
                 </Jumbotron>
+            <Grid>
                 <Row className="show-grid text-center">
                     <a href="https://discord.gg/9FaQdny" target="_blank">
                         <Col xs={12} sm={4} className="social-wrapper hvr-grow">
@@ -45,6 +46,7 @@ class Home extends Component {
                     </a>
                 </Row>
             </Grid>
+            </div>
         )
     }
 }

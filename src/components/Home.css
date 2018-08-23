@@ -1,7 +1,9 @@
 .jumbotron {
     margin-bottom: 2em;
     text-align: center;
-    background-color: white;
+
+    background-image: url("../assets/header-image.jpeg");
+    background-position: center;
 }
 
 .social-wrapper {
