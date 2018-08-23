@@ -15,9 +15,6 @@ class Home extends Component {
                     <Link to="/apidocs">
                         <Button bsStyle="primary">API Docs</Button>
                     </Link>
-                    <Link to="/about">
-                        <Button bsStyle="primary">About</Button>
-                    </Link>
                 </Jumbotron>
                 <Grid>
                     <Row className="show-grid text-center">

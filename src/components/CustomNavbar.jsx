@@ -18,16 +18,13 @@ export default class CustomNavbar extends Component {
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/">
                             Home
                         </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} href="/about" to="/about">
-                            About
-                        </NavItem>
-                        <NavItem eventKey={3} componentClass={Link} href="/apidoc" to="/apidoc">
+                        <NavItem eventKey={2} componentClass={Link} href="/apidoc" to="/apidoc">
                             API Documentation
                         </NavItem>
-                        <NavDropdown eventKey={4} title="Social" id="basic-nav-dropdown">
-                            <MenuItem eventKey={4.1} href="https://discord.gg/9FaQdny">Discord</MenuItem>
-                            <MenuItem eventKey={4.2}>Reddit</MenuItem>
-                            <MenuItem eventKey={4.3} href="https://twitter.com/the_snapi">Twitter</MenuItem>
+                        <NavDropdown eventKey={3} title="Social" id="basic-nav-dropdown">
+                            <MenuItem eventKey={3.1} href="https://discord.gg/9FaQdny">Discord</MenuItem>
+                            <MenuItem eventKey={3.2}>Reddit</MenuItem>
+                            <MenuItem eventKey={3.3} href="https://twitter.com/the_snapi">Twitter</MenuItem>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
