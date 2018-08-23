@@ -5,11 +5,9 @@ import "./Footer.css"
 class Footer extends Component {
     render() {
         return (
-            <div>
-                <Panel>
-                    <Panel.Footer>© Spaceflight News API 2018</Panel.Footer>
-                </Panel>;
-            </div>
+            <Panel>
+                <Panel.Footer>© Spaceflight News API 2018</Panel.Footer>
+            </Panel>
         );
     }
 }
