@@ -18,9 +18,9 @@ export default class CustomNavbar extends Component {
                         <NavItem eventKey={1} componentClass={Link} href="/" to="/">
                             Home
                         </NavItem>
-                        <NavItem eventKey={2} componentClass={Link} href="/apidoc" to="/apidoc">
+                        <MenuItem href="http://spaceflight-news-api.readthedocs.io/" target="_blank">
                             API Documentation
-                        </NavItem>
+                        </MenuItem>
                         <NavDropdown eventKey={3} title="Social" id="basic-nav-dropdown">
                             <MenuItem eventKey={3.1} href="https://discord.gg/9FaQdny">Discord</MenuItem>
                             <MenuItem eventKey={3.2}>Reddit</MenuItem>

@@ -12,9 +12,9 @@ class Home extends Component {
                     <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
                     <p style={{color:'white'}}>Ready to begin?</p>
-                    <Link to="/apidocs">
+                    <a href="https://spaceflight-news-api.readthedocs.io" target="_blank">
                         <Button bsStyle="primary">API Docs</Button>
-                    </Link>
+                    </a>
                 </Jumbotron>
                 <Grid>
                     <Row className="show-grid text-center">
