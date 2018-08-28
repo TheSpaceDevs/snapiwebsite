@@ -22,12 +22,12 @@ module.exports = {
             'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
         },
         test : {
-            user : 'www-data',
+            user : 'derk',
             host : '142.93.226.193',
             ref  : 'origin/test',
             repo : 'https://github.com/derkweijers/snapiwebsite.git',
             path : '/var/www/snapiwebsite-test',
-            'post-deploy' : 'chown -R www-data:www-data && npm install && pm2 reload ecosystem.config.js --env test'
+            'post-deploy' : 'chown -R www-data:www-data /var/www/snapiwebsite-test && npm install && pm2 reload ecosystem.config.js --env test'
         }
     }
 };
