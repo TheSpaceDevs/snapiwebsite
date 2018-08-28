@@ -19,23 +19,23 @@ class Home extends Component {
                 <Grid>
                     <Row className="show-grid text-center">
                         <a href="https://discord.gg/9FaQdny" target="_blank">
-                            <Col xs={12} sm={4} className="social-wrapper hvr-grow">
+                            <Col xs={12} sm={6} className="social-wrapper hvr-grow">
                                 <Image src="assets/Discord-Logo-Color.svg" className="social-pic"/>
                                 <h3>Discord</h3>
                                 <p>Need help, have a question, or just want to chat? Come join us on Discord!</p>
                             </Col>
                         </a>
-                        <a href="#" target="_blank">
-                        <Col xs={12} sm={4} className="social-wrapper hvr-grow">
-                            <Image src="assets/reddit.png" className="social-pic"/>
-                            <h3>Reddit</h3>
-                            <p>Want to stay up-to-date with the latest news about releases and upcoming features?
-                                Subscribe to our sub-reddit!
-                            </p>
-                        </Col>
-                        </a>
+                        {/*<a href="#" target="_blank">*/}
+                        {/*<Col xs={12} sm={4} className="social-wrapper hvr-grow">*/}
+                            {/*<Image src="assets/reddit.png" className="social-pic"/>*/}
+                            {/*<h3>Reddit</h3>*/}
+                            {/*<p>Want to stay up-to-date with the latest news about releases and upcoming features?*/}
+                                {/*Subscribe to our sub-reddit!*/}
+                            {/*</p>*/}
+                        {/*</Col>*/}
+                        {/*</a>*/}
                         <a href="https://twitter.com/the_snapi" target="_blank">
-                        <Col xs={12} sm={4} className="social-wrapper hvr-grow">
+                        <Col xs={12} sm={6} className="social-wrapper hvr-grow">
                             <Image src="assets/Twitter_Logo_Blue.svg" className="social-pic"/>
                                 <h3>Twitter</h3>
                                 <p>Follow us on Twitter to stay up-to-date!</p>
