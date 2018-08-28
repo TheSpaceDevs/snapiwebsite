@@ -10,11 +10,11 @@ module.exports = {
 
     deploy : {
         production : {
-            user : 'node',
-            host : '212.83.163.1',
+            user : 'derk',
+            host : '142.93.226.193',
             ref  : 'origin/master',
             repo : 'git@github.com:repo.git',
-            path : '/var/www/production',
+            path : '/var/www/snapiwebsite-prod',
             'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
         }
     }
