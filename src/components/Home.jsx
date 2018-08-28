@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Jumbotron, Grid, Row, Col, Image, Button} from 'react-bootstrap';
+import {Jumbotron, Grid, Row, Col, Image, Button, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './Home.css';
 
 class Home extends Component {
@@ -40,6 +40,20 @@ class Home extends Component {
                                 <p>Follow us on Twitter to stay up-to-date!</p>
                         </Col>
                         </a>
+                    </Row>
+                    <Row className="show-grid text-center">
+                        <h2>Latest API Changes</h2>
+                        <Col xs={12} sm={12} className="news-wrapper">
+                            <ListGroup>
+                                <ListGroupItem header="Heading 1">Some body text</ListGroupItem>
+                                <ListGroupItem header="Heading 2" href="#">
+                                    Linked item
+                                </ListGroupItem>
+                                <ListGroupItem header="Heading 3" bsStyle="danger">
+                                    Danger styling
+                                </ListGroupItem>
+                            </ListGroup>;
+                        </Col>
                     </Row>
                 </Grid>
             </div>
