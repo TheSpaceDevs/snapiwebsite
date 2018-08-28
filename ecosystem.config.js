@@ -27,7 +27,7 @@ module.exports = {
             ref  : 'origin/test',
             repo : 'https://github.com/derkweijers/snapiwebsite.git',
             path : '/var/www/snapiwebsite-test',
-            'post-deploy' : 'chown -R www-data:www-data /var/www/snapiwebsite-test && npm install && pm2 reload ecosystem.config.js --env test'
+            'post-deploy' : 'sudo chown -R www-data:www-data /var/www/snapiwebsite-test && npm install && pm2 reload ecosystem.config.js --env test'
         }
     }
 };
