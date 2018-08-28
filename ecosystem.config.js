@@ -25,7 +25,7 @@ module.exports = {
             user : 'derk',
             host : '142.93.226.193',
             ref  : 'origin/test',
-            repo : 'git@github.com:derkweijers/snapiwebsite.git',
+            repo : 'https://github.com/derkweijers/snapiwebsite.git',
             path : '/var/www/snapiwebsite-test',
             'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
         }
