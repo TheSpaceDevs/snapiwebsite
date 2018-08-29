@@ -45,14 +45,14 @@ class Home extends Component {
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="Heading 1">Some body text</ListGroupItem>
-                                <ListGroupItem header="Heading 2" href="#">
-                                    Linked item
+                                <ListGroupItem header="v0.1.0 (TBR)" bsStyle="warning">
+                                    <p>> Get a list of the latest articles</p>
+                                    <p>> Find articles on title, category and tag</p>
+                                    <p>> Find articles on only category or tag</p>
+                                    <p>> Find all articles by a news site</p>
+                                    <p>> Find article by its ID</p>
                                 </ListGroupItem>
-                                <ListGroupItem header="Heading 3" bsStyle="danger">
-                                    Danger styling
-                                </ListGroupItem>
-                            </ListGroup>;
+                            </ListGroup>
                         </Col>
                     </Row>
                 </Grid>
