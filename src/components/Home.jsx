@@ -7,7 +7,8 @@ class Home extends Component {
         return (
             <div>
                 <Jumbotron>
-                    <h2>Spaceflight News API</h2>
+                    {/*<h2>Spaceflight News API</h2>*/}
+                    <Image src="./assets/SVGlogoWhiteText.png" bsClass="headerImage" />
                     <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
                     <p style={{color:'white'}}>Ready to begin?</p>
@@ -45,7 +46,7 @@ class Home extends Component {
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="v0.1.0 (TBR)" bsStyle="warning">
+                                <ListGroupItem header="v0.1.0 (31-08-2018)" bsStyle="warning">
                                     <p>> Get a list of the latest articles</p>
                                     <p>> Find articles on title, category and tag</p>
                                     <p>> Find articles on only category or tag</p>
