@@ -2,13 +2,12 @@ import React, { Component } from 'react';
 import {Jumbotron, Grid, Row, Col, Image, Button, ListGroup, ListGroupItem} from 'react-bootstrap';
 import './Home.css';
 
-class Home extends Component {
+    class Home extends Component {
     render() {
         return (
             <div>
                 <Jumbotron>
-                    {/*<h2>Spaceflight News API</h2>*/}
-                    <Image src="./assets/SVGlogoWhiteText.png" bsClass="headerImage" />
+                    <Image src="./assets/SVGlogoWhiteText.png" />
                     <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
                     <p style={{color:'white'}}>Ready to begin?</p>
