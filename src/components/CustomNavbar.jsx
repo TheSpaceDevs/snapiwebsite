@@ -23,7 +23,7 @@ export default class CustomNavbar extends Component {
                         </MenuItem>
                         <NavDropdown eventKey={3} title="Social" id="basic-nav-dropdown">
                             <MenuItem eventKey={3.1} href="https://discord.gg/9FaQdny">Discord</MenuItem>
-                            <MenuItem eventKey={3.2}>Reddit</MenuItem>
+                            {/*<MenuItem eventKey={3.2}>Reddit</MenuItem>*/}
                             <MenuItem eventKey={3.3} href="https://twitter.com/the_snapi">Twitter</MenuItem>
                         </NavDropdown>
                     </Nav>
