@@ -7,7 +7,7 @@ import './Home.css';
         return (
             <div>
                 <Jumbotron>
-                    <Image src="./assets/SVGlogoWhiteText.png" />
+                    <h2>Spaceflight News API</h2>
                     <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
                     <p style={{color:'white'}}>Ready to begin?</p>
@@ -45,10 +45,10 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="v0.2.0 (TBD)" bsStyle="warning">
+                                <ListGroupItem header="v0.2.0 beta (TBD)" bsStyle="warning">
                                     <p>> Add automated testing</p>
                                 </ListGroupItem>
-                                <ListGroupItem header="v0.1.0 (31-08-2018)" bsStyle="warning">
+                                <ListGroupItem header="v0.1.0 beta (03-09-2018)"  bsStyle="success">
                                     <p>> Get a list of the latest articles</p>
                                     <p>> Find articles on title, category and tag</p>
                                     <p>> Find articles on only category or tag</p>
