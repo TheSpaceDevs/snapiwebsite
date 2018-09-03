@@ -12,3 +12,6 @@ Fork this repo, make your change and create a pull-request.
 
 ### Contact
 Feel free to contact us over at Discord (https://discord.gg/9FaQdny) or Twitter (https://twitter.com/the_snapi)
+
+### v0.1.0
+Initial release of the site.
