@@ -47,6 +47,7 @@ import './Home.css';
                             <ListGroup>
                                 <ListGroupItem header="v0.2.0 beta (TBD)" bsStyle="warning">
                                     <p>> Add automated testing</p>
+                                    <p>> Add the ability to search from n time</p>
                                 </ListGroupItem>
                                 <ListGroupItem header="v0.1.1 beta (04-09-2018)"  bsStyle="success">
                                     <p>> Github link fixed in package.json</p>
