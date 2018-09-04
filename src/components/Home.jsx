@@ -48,6 +48,11 @@ import './Home.css';
                                 <ListGroupItem header="v0.2.0 beta (TBD)" bsStyle="warning">
                                     <p>> Add automated testing</p>
                                 </ListGroupItem>
+                                <ListGroupItem header="v0.1.1 beta (04-09-2018)"  bsStyle="success">
+                                    <p>> Github link fixed in package.json</p>
+                                    <p>> Version fixed in package.json</p>
+                                    <p>> Searching on date_published and date_added should work again</p>
+                                </ListGroupItem>
                                 <ListGroupItem header="v0.1.0 beta (03-09-2018)"  bsStyle="success">
                                     <p>> Get a list of the latest articles</p>
                                     <p>> Find articles on title, category and tag</p>
