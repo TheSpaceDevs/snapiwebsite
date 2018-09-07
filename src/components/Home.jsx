@@ -45,10 +45,7 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="v0.3.0 beta (TBD)" bsStyle="warning">
-                                    <p>> Add featured images to articles</p>
-                                </ListGroupItem>
-                                <ListGroupItem header="v0.2.0 beta (06-09-2018)" bsStyle="warning">
+                                <ListGroupItem header="v0.2.0 beta (07-09-2018)" bsStyle="success">
                                     <p>> Add automated testing</p>
                                     <p>> Add the ability to search from n time</p>
                                 </ListGroupItem>
