@@ -47,7 +47,7 @@ import './Home.css';
                             <ListGroup>
                                 <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
                                     <p>> 'id' tag removed from the response</p>
-                                    <p>> Added the 'news_site_long' to the model</p>
+                                    <p>> Added 'news_site_long' to the model</p>
                                 </ListGroupItem>
                                 <ListGroupItem header="v0.2.0 beta (07-09-2018)" bsStyle="success">
                                     <p>> Add automated testing</p>
