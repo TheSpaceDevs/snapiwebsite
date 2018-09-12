@@ -45,6 +45,10 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
+                                <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
+                                    <p>> 'id' tag removed from the response</p>
+                                    <p>> Added the 'news_site_long' to the model</p>
+                                </ListGroupItem>
                                 <ListGroupItem header="v0.2.0 beta (07-09-2018)" bsStyle="success">
                                     <p>> Add automated testing</p>
                                     <p>> Add the ability to search from n time</p>
@@ -53,13 +57,6 @@ import './Home.css';
                                     <p>> Github link fixed in package.json</p>
                                     <p>> Version fixed in package.json</p>
                                     <p>> Searching on date_published and date_added should work again</p>
-                                </ListGroupItem>
-                                <ListGroupItem header="v0.1.0 beta (03-09-2018)"  bsStyle="success">
-                                    <p>> Get a list of the latest articles</p>
-                                    <p>> Find articles on title, category and tag</p>
-                                    <p>> Find articles on only category or tag</p>
-                                    <p>> Find all articles by a news site</p>
-                                    <p>> Find article by its ID</p>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
