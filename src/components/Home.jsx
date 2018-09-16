@@ -45,6 +45,9 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
+                                <ListGroupItem header="v0.4.0 beta (17-09-2018)" bsStyle="success">
+                                    <p>> Now possible to search on the same key multiple times</p>
+                                </ListGroupItem>
                                 <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
                                     <p>> 'id' tag removed from the response</p>
                                     <p>> Added 'news_site_long' to the model</p>
@@ -52,11 +55,6 @@ import './Home.css';
                                 <ListGroupItem header="v0.2.0 beta (07-09-2018)" bsStyle="success">
                                     <p>> Add automated testing</p>
                                     <p>> Add the ability to search from n time</p>
-                                </ListGroupItem>
-                                <ListGroupItem header="v0.1.1 beta (04-09-2018)"  bsStyle="success">
-                                    <p>> Github link fixed in package.json</p>
-                                    <p>> Version fixed in package.json</p>
-                                    <p>> Searching on date_published and date_added should work again</p>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
