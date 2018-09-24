@@ -45,16 +45,15 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
+                                <ListGroupItem header="v0.5.0 beta (TBD)" bsStyle="warning">
+                                    <p>> Add pagination</p>
+                                </ListGroupItem>
                                 <ListGroupItem header="v0.4.0 beta (17-09-2018)" bsStyle="success">
                                     <p>> Now possible to search on the same key multiple times</p>
                                 </ListGroupItem>
                                 <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
                                     <p>> 'id' tag removed from the response</p>
                                     <p>> Added 'news_site_long' to the model</p>
-                                </ListGroupItem>
-                                <ListGroupItem header="v0.2.0 beta (07-09-2018)" bsStyle="success">
-                                    <p>> Add automated testing</p>
-                                    <p>> Add the ability to search from n time</p>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
