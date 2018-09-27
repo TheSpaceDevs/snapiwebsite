@@ -45,11 +45,12 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="v0.5.0 beta (27-09-2018)" bsStyle="warning">
+                                <ListGroupItem header="v0.5.0 beta (27-09-2018)" bsStyle="success">
                                     <p>> Added pagination</p>
                                     <p>> Added /info endpoint</p>
-                                    <p>> Added /articlecount to /info endpoint</p>
-                                    <p>> Added /version to /info endpoint</p>
+                                    <p>> Added version info to /info endpoint</p>
+                                    <p>> Added total article count to /info endpoint</p>
+                                    <p>> Heroku upgraded from stack 16 to 18</p>
                                 </ListGroupItem>
                                 <ListGroupItem header="v0.4.0 beta (17-09-2018)" bsStyle="success">
                                     <p>> Now possible to search on the same key multiple times</p>
