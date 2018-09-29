@@ -7,7 +7,7 @@ import './Home.css';
         return (
             <div>
                 <Jumbotron>
-                    <Image src="./assets/SVGlogoWhiteText.png" />
+                    <h2>Spaceflight News API</h2>
                     <p style={{color:'white'}} >Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to their apps.
                     </p>
                     <p style={{color:'white'}}>Ready to begin?</p>
@@ -45,15 +45,19 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                                <ListGroupItem header="v0.2.0 (TBD)" bsStyle="warning">
-                                    <p>> Add automated testing</p>
+                                <ListGroupItem header="v0.5.0 beta (27-09-2018)" bsStyle="success">
+                                    <p>> Added pagination</p>
+                                    <p>> Added /info endpoint</p>
+                                    <p>> Added version info to /info endpoint</p>
+                                    <p>> Added total article count to /info endpoint</p>
+                                    <p>> Heroku upgraded from stack 16 to 18</p>
                                 </ListGroupItem>
-                                <ListGroupItem header="v0.1.0 (31-08-2018)" bsStyle="warning">
-                                    <p>> Get a list of the latest articles</p>
-                                    <p>> Find articles on title, category and tag</p>
-                                    <p>> Find articles on only category or tag</p>
-                                    <p>> Find all articles by a news site</p>
-                                    <p>> Find article by its ID</p>
+                                <ListGroupItem header="v0.4.0 beta (17-09-2018)" bsStyle="success">
+                                    <p>> Now possible to search on the same key multiple times</p>
+                                </ListGroupItem>
+                                <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
+                                    <p>> 'id' tag removed from the response</p>
+                                    <p>> Added 'news_site_long' to the model</p>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
