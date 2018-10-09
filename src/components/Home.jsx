@@ -45,6 +45,12 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
+                                <ListGroupItem header="v0.6.0 beta (TBD)" bsStyle="warning">
+                                    <p>> Blogs endpoint added</p>
+                                    <p>> ISS endpoint added</p>
+                                    <p>> Ability to retrieve ISS expedition data</p>
+                                    <p>> Automated tests will now check if version was bumped</p>
+                                </ListGroupItem>
                                 <ListGroupItem header="v0.5.0 beta (27-09-2018)" bsStyle="success">
                                     <p>> Added pagination</p>
                                     <p>> Added /info endpoint</p>
@@ -54,10 +60,6 @@ import './Home.css';
                                 </ListGroupItem>
                                 <ListGroupItem header="v0.4.0 beta (17-09-2018)" bsStyle="success">
                                     <p>> Now possible to search on the same key multiple times</p>
-                                </ListGroupItem>
-                                <ListGroupItem header="v0.3.0 beta (12-09-2018)" bsStyle="success">
-                                    <p>> 'id' tag removed from the response</p>
-                                    <p>> Added 'news_site_long' to the model</p>
                                 </ListGroupItem>
                             </ListGroup>
                         </Col>
