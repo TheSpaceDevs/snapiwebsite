@@ -45,7 +45,7 @@ import './Home.css';
                         <h2>Latest API Changes</h2>
                         <Col xs={12} sm={12} className="news-wrapper">
                             <ListGroup>
-                              <ListGroupItem header="v0.6.0 beta (TBD)" bsStyle="success">
+                              <ListGroupItem header="v0.6.0 beta (30-10-2018)" bsStyle="success">
                                     <p>> Blogs endpoint added</p>
                                     <p>> ISS endpoint added</p>
                                     <p>> Ability to retrieve ISS expedition data</p>
