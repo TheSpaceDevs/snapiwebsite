@@ -46,7 +46,7 @@ class Home extends Component {
             <h2>Latest API Changes</h2>
             <Col xs={12} sm={12} className="news-wrapper">
               <ListGroup>
-                <ListGroupItem header="v0.7.0 beta (11-12-2018)" bsStyle="warning">
+                <ListGroupItem header="v0.7.0 beta (11-12-2018)" bsStyle="success">
                   <p>> /astronauts endpoint can now receive queries;</p>
                   <p>> Link to astronaut portrait added;</p>
                   <p>> Daily ISS reports are now being imported;</p>
