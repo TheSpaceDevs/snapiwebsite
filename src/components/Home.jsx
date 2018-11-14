@@ -26,7 +26,7 @@ class Home extends Component {
           <hr className="my-2"/>
           <p>Ready to begin?</p>
           <p className="lead">
-            <Button color="primary">Go To Docs</Button>
+            <Button onClick={()=> window.open("https://spaceflight-news-api.readthedocs.io/en/latest/", "_blank")} color="primary">Go To Docs</Button>
           </p>
         </Jumbotron>
         <Container>
