@@ -10,14 +10,16 @@ import {
   Row
 } from "reactstrap";
 
+import HeaderImage from './assets/header.jpg'
+
 
 class Home extends Component {
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
-        <Jumbotron>
-          {/*Rendering display 3 on large screens, and display xs screens.*/}
-          <h1 className="display-3 d-none d-lg-block">Spaceflight News API</h1>
+      <div style={{ textAlign: "center"}}>
+        <Jumbotron style={{ backgroundImage: `url(${HeaderImage})`}} >
+          {/*Rendering display-3 on large screens, and display-4 on xs screens.*/}
+          <h1 className="display-3 d-none d-sm-block">Spaceflight News API</h1>
           <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
           <p className="lead">Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to
             their apps.</p>
@@ -28,6 +30,7 @@ class Home extends Component {
           </p>
         </Jumbotron>
         <Container>
+          <h1>Features</h1>
           <Row>
             <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
