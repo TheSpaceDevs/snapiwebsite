@@ -16,8 +16,8 @@ class Home extends Component {
     return (
       <div style={{ textAlign: "center" }}>
         <Jumbotron>
-          {/*Rendering display 3 on large screens, and display xs screens.*/}
-          <h1 className="display-3 d-none d-lg-block">Spaceflight News API</h1>
+          {/*Rendering display-3 on large screens, and display-4 on xs screens.*/}
+          <h1 className="display-3 d-none d-sm-block">Spaceflight News API</h1>
           <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
           <p className="lead">Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to
             their apps.</p>
