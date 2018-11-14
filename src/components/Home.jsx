@@ -27,7 +27,7 @@ class Home extends Component {
         </Jumbotron>
         <Container>
           <Row>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Latest News</CardHeader>
                 <CardBody>
@@ -35,7 +35,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Blogs</CardHeader>
                 <CardBody>
@@ -43,7 +43,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">ISS</CardHeader>
                 <CardBody>
@@ -51,7 +51,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="6">
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Manned Flights</CardHeader>
                 <CardBody>
@@ -59,7 +59,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="6">
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Astronauts</CardHeader>
                 <CardBody>
