@@ -30,6 +30,7 @@ class Home extends Component {
           </p>
         </Jumbotron>
         <Container>
+          <h1>Features</h1>
           <Row>
             <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
