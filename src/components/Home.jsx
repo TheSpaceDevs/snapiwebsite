@@ -1,74 +1,79 @@
 import React, { Component } from "react";
-import { Jumbotron, Grid, Row, Col, Image, Button, ListGroup, ListGroupItem } from "react-bootstrap";
-import "./Home.css";
+import {
+  Badge,
+  Button,
+  Card,
+  CardBody, CardHeader,
+  Col,
+  Container,
+  Jumbotron,
+  Row
+} from "reactstrap";
+
+import HeaderImage from './assets/header.jpg'
+
 
 class Home extends Component {
   render() {
     return (
-      <div>
-        <Jumbotron>
-          <h2>Spaceflight News API</h2>
-          <p style={{ color: "white" }}>Spaceflight News API (SNAPI) enables developers to add the latest spaceflight
-            news to their apps.
+      <div style={{ textAlign: "center"}}>
+        <Jumbotron style={{ backgroundImage: `url(${HeaderImage})`}} >
+          {/*Rendering display-3 on large screens, and display-4 on xs screens.*/}
+          <h1 className="display-3 d-none d-sm-block">Spaceflight News API</h1>
+          <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
+          <p className="lead">Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to
+            their apps.</p>
+          <hr className="my-2"/>
+          <p>Ready to begin?</p>
+          <p className="lead">
+            <Button color="primary">Go To Docs</Button>
           </p>
-          <p style={{ color: "white" }}>Ready to begin?</p>
-          <a href="https://spaceflight-news-api.readthedocs.io" target="_blank" rel="noopener noreferrer">
-            <Button bsStyle="primary">API Docs</Button>
-          </a>
         </Jumbotron>
-        <Grid>
-          <Row className="show-grid text-center">
-            <a href="https://discord.gg/9FaQdny" target="_blank" rel="noopener noreferrer">
-              <Col xs={12} sm={4} className="social-wrapper hvr-grow">
-                <Image src="assets/Discord-Logo-Color.svg" className="social-pic"/>
-                <h3>Discord</h3>
-                <p>Need help, have a question, or just want to chat? Come join us on Discord!</p>
-              </Col>
-            </a>
-            <a href="https://www.reddit.com/r/snapi/" target="_blank" rel="noopener noreferrer">
-              <Col xs={12} sm={4} className="social-wrapper hvr-grow">
-                <Image src="assets/reddit.png" className="social-pic"/>
-                <h3>Reddit</h3>
-                <p>Want to stay up-to-date with the latest news about releases and upcoming features?
-                  Subscribe to our sub-reddit!
-                </p>
-              </Col>
-            </a>
-            <a href="https://twitter.com/the_snapi" target="_blank" rel="noopener noreferrer">
-              <Col xs={12} sm={4} className="social-wrapper hvr-grow">
-                <Image src="assets/Twitter_Logo_Blue.svg" className="social-pic"/>
-                <h3>Twitter</h3>
-                <p>Follow us on Twitter to stay up-to-date!</p>
-              </Col>
-            </a>
-          </Row>
-          <Row className="show-grid text-center">
-            <h2>Latest API Changes</h2>
-            <Col xs={12} sm={12} className="news-wrapper">
-              <ListGroup>
-                <ListGroupItem header="v0.7.0 beta (11-12-2018)" bsStyle="success">
-                  <p>> /astronauts endpoint can now receive queries;</p>
-                  <p>> Link to astronaut portrait added;</p>
-                  <p>> Daily ISS reports are now being imported;</p>
-                  <p>> /iss endpoint will have the latest daily ISS report.</p>
-                </ListGroupItem>
-                <ListGroupItem header="v0.6.0 beta (30-10-2018)" bsStyle="success">
-                  <p>> Blogs endpoint added</p>
-                  <p>> ISS endpoint added</p>
-                  <p>> Ability to retrieve ISS expedition data</p>
-                  <p>> Automated tests will now check if version was bumped</p>
-                </ListGroupItem>
-                <ListGroupItem header="v0.5.0 beta (27-09-2018)" bsStyle="success">
-                  <p>> Added pagination</p>
-                  <p>> Added /info endpoint</p>
-                  <p>> Added version info to /info endpoint</p>
-                  <p>> Added total article count to /info endpoint</p>
-                  <p>> Heroku upgraded from stack 16 to 18</p>
-                </ListGroupItem>
-              </ListGroup>
+        <Container>
+          <h1>Features</h1>
+          <Row>
+            <Col xs={12} sm={4}>
+              <Card className="card text-white bg-secondary mb-3">
+                <CardHeader tag="h4">Latest News</CardHeader>
+                <CardBody>
+                  Add spaceflight related news to your websites and apps.
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Card className="card text-white bg-secondary mb-3">
+                <CardHeader tag="h4">Blogs</CardHeader>
+                <CardBody>
+                  There are many great space related blogs. Add them easily!
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} sm={4}>
+              <Card className="card text-white bg-secondary mb-3">
+                <CardHeader tag="h4">ISS</CardHeader>
+                <CardBody>
+                  Want to get the latest ISS data? check the /iss endpoint.
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6}>
+              <Card className="card text-white bg-secondary mb-3">
+                <CardHeader tag="h4">Manned Flights</CardHeader>
+                <CardBody>
+                  Retrieve data about all manned spaceflights <Badge color="info" >WIP</Badge>.
+                </CardBody>
+              </Card>
+            </Col>
+            <Col xs={12} sm={6}>
+              <Card className="card text-white bg-secondary mb-3">
+                <CardHeader tag="h4">Astronauts</CardHeader>
+                <CardBody>
+                  Want to know more about astronauts? /astronauts <Badge color="info" >WIP</Badge>.
+                </CardBody>
+              </Card>
             </Col>
           </Row>
-        </Grid>
+        </Container>
       </div>
     );
   }
