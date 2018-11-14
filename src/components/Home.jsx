@@ -16,7 +16,9 @@ class Home extends Component {
     return (
       <div style={{ textAlign: "center" }}>
         <Jumbotron>
-          <h1 className="display-3">Spaceflight News API</h1>
+          {/*Rendering display 3 on large screens, and display xs screens.*/}
+          <h1 className="display-3 d-none d-lg-block">Spaceflight News API</h1>
+          <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
           <p className="lead">Spaceflight News API (SNAPI) enables developers to add the latest spaceflight news to
             their apps.</p>
           <hr className="my-2"/>
@@ -27,7 +29,7 @@ class Home extends Component {
         </Jumbotron>
         <Container>
           <Row>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Latest News</CardHeader>
                 <CardBody>
@@ -35,7 +37,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Blogs</CardHeader>
                 <CardBody>
@@ -43,7 +45,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="4">
+            <Col xs={12} sm={4}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">ISS</CardHeader>
                 <CardBody>
@@ -51,7 +53,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="6">
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Manned Flights</CardHeader>
                 <CardBody>
@@ -59,7 +61,7 @@ class Home extends Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="6">
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Astronauts</CardHeader>
                 <CardBody>
