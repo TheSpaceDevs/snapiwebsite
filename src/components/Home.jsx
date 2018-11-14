@@ -10,12 +10,14 @@ import {
   Row
 } from "reactstrap";
 
+import HeaderImage from './assets/header.jpg'
+
 
 class Home extends Component {
   render() {
     return (
-      <div style={{ textAlign: "center" }}>
-        <Jumbotron>
+      <div style={{ textAlign: "center"}}>
+        <Jumbotron style={{ backgroundImage: `url(${HeaderImage})`}} >
           {/*Rendering display-3 on large screens, and display-4 on xs screens.*/}
           <h1 className="display-3 d-none d-sm-block">Spaceflight News API</h1>
           <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
