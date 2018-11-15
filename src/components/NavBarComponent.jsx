@@ -13,6 +13,8 @@ import {
   Collapse
 } from "reactstrap";
 
+import Login from "./Login";
+
 class NavBarComponent extends Component {
   constructor(props) {
     super(props);
@@ -62,6 +64,9 @@ class NavBarComponent extends Component {
             </UncontrolledDropdown>
             <NavItem>
               <NavLink href="https://github.com/spaceflightnewsapi" target="_blank">GitHub</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href="/login">Login</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
