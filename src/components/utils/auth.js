@@ -6,7 +6,7 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'spaceflightnewsapi.eu.auth0.com',
     clientID: 'BpmpmTeN3r8AWgxOmAIjYm_0M8ZbGrBY',
-    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://spaceflightnewsapi.net/callback',
+    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://www.spaceflightnewsapi.net/callback',
     responseType: 'token id_token',
     scope: 'openid'
   });
