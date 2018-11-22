@@ -6,7 +6,7 @@ import NavBarComponent from "./components/NavBarComponent";
 import Home from "./components/Home";
 import Auth from './components/utils/auth';
 import history from './components/utils/history';
-import Callback from "./components/Callback";
+import Callback from "./components/utils/callback";
 
 const auth = new Auth();
 
