@@ -22,6 +22,5 @@ Fixed the button in the Jumbotron.
 ### v1.0.0
 Rebuild the site in Bootstrap 4.
 
-
 ### v0.1.0
 Initial release of the site.
