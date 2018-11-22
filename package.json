@@ -1,6 +1,6 @@
 {
   "name": "snapiwebsite",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Derk Weijers <derk@spaceflightnewsapi.net (https://snapi.space)",
   "repository": {
     "type": "git",
@@ -15,7 +15,8 @@
     "react-dom": "^16.6.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.1.1",
-    "reactstrap": "^6.5.0"
+    "reactstrap": "^6.5.0",
+    "history": "latest"
   },
   "scripts": {
     "start": "react-scripts start",

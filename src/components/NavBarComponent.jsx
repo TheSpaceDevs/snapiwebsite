@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, {Component} from "react";
 import {
   DropdownItem,
   DropdownMenu,
@@ -12,8 +12,6 @@ import {
   NavbarToggler,
   Collapse
 } from "reactstrap";
-
-import Login from "./Login";
 
 class NavBarComponent extends Component {
   constructor(props) {
@@ -31,7 +29,16 @@ class NavBarComponent extends Component {
     });
   }
 
+  login = () => {
+    this.props.auth.login();
+  };
+
+  logout = () => {
+    this.props.auth.logout();
+  };
+
   render() {
+    const {isAuthenticated} = this.props.auth;
     return (
       <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
         <NavbarBrand href="/">Spaceflight News API</NavbarBrand>
@@ -66,7 +73,12 @@ class NavBarComponent extends Component {
               <NavLink href="https://github.com/spaceflightnewsapi" target="_blank">GitHub</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="/login">Login</NavLink>
+              { !isAuthenticated() &&
+              <NavLink onClick={this.login}>Login</NavLink>
+              }
+              { isAuthenticated() &&
+              <NavLink onClick={this.logout}>Logout</NavLink>
+              }
             </NavItem>
           </Nav>
         </Collapse>
