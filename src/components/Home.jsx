@@ -10,14 +10,14 @@ import {
   Row
 } from "reactstrap";
 
-import HeaderImage from './assets/header.jpg'
+import HeaderImage from "./assets/header.jpg";
 
 
 class Home extends Component {
   render() {
     return (
-      <div style={{ textAlign: "center"}}>
-        <Jumbotron style={{ backgroundImage: `url(${HeaderImage})`}} >
+      <div style={{ textAlign: "center" }}>
+        <Jumbotron style={{ backgroundImage: `url(${HeaderImage})` }}>
           {/*Rendering display-3 on large screens, and display-4 on xs screens.*/}
           <h1 className="display-3 d-none d-sm-block">Spaceflight News API</h1>
           <h1 className="display-4 d-block d-sm-none">Spaceflight News API</h1>
@@ -26,7 +26,8 @@ class Home extends Component {
           <hr className="my-2"/>
           <p>Ready to begin?</p>
           <p className="lead">
-            <Button onClick={()=> window.open("https://spaceflight-news-api.readthedocs.io/en/latest/", "_blank")} color="primary">Go To Docs</Button>
+            <Button onClick={() => window.open("https://spaceflight-news-api.readthedocs.io/en/latest/", "_blank")}
+                    color="primary">Go To Docs</Button>
           </p>
         </Jumbotron>
         <Container>
@@ -60,7 +61,7 @@ class Home extends Component {
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Manned Flights</CardHeader>
                 <CardBody>
-                  Retrieve data about all manned spaceflights <Badge color="info" >WIP</Badge>.
+                  Retrieve data about all manned spaceflights <Badge color="info">WIP</Badge>.
                 </CardBody>
               </Card>
             </Col>
@@ -68,7 +69,7 @@ class Home extends Component {
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Astronauts</CardHeader>
                 <CardBody>
-                  Want to know more about astronauts? /astronauts <Badge color="info" >WIP</Badge>.
+                  Want to know more about astronauts? /astronauts <Badge color="info">WIP</Badge>.
                 </CardBody>
               </Card>
             </Col>
