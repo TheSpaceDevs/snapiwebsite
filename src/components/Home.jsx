@@ -12,7 +12,6 @@ import {
 
 import HeaderImage from "./assets/header.jpg";
 
-
 class Home extends Component {
   render() {
     return (
