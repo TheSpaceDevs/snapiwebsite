@@ -1,12 +1,13 @@
 import auth0 from 'auth0-js';
 
 import history from './history';
+import { CALLBACK } from "../../config/callback";
 
 export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'spaceflightnewsapi.eu.auth0.com',
     clientID: 'BpmpmTeN3r8AWgxOmAIjYm_0M8ZbGrBY',
-    redirectUri: process.env.NODE_ENV === 'development' ? 'http://localhost:3000/callback' : 'https://www.spaceflightnewsapi.net/callback',
+    redirectUri: CALLBACK,
     responseType: 'token id_token',
     scope: 'openid'
   });

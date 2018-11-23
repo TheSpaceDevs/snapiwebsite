@@ -24,7 +24,6 @@ class App extends Component {
         <div className="App">
           <NavBarComponent auth={auth}/>
           <Route path="/" exact render={(props) => <Home auth={auth} {...props}/>} />
-          <Route path="/home" render={(props) => <Home auth={auth} {...props} />} />
           <Route path="/callback" render={(props) => {
             handleAuthentication(props);
             return <Callback {...props} />
