@@ -1,16 +1,16 @@
 import React, {Component} from "react";
 import {
+  Collapse,
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
   Nav,
   Navbar,
   NavbarBrand,
+  NavbarToggler,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  NavbarToggler,
-  Collapse
+  UncontrolledDropdown
 } from "reactstrap";
 
 class NavBarComponent extends Component {
@@ -29,16 +29,7 @@ class NavBarComponent extends Component {
     });
   }
 
-  login = () => {
-    this.props.auth.login();
-  };
-
-  logout = () => {
-    this.props.auth.logout();
-  };
-
   render() {
-    const {isAuthenticated} = this.props.auth;
     return (
       <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
         <NavbarBrand href="/">Spaceflight News API</NavbarBrand>
@@ -71,14 +62,6 @@ class NavBarComponent extends Component {
             </UncontrolledDropdown>
             <NavItem>
               <NavLink href="https://github.com/spaceflightnewsapi" target="_blank">GitHub</NavLink>
-            </NavItem>
-            <NavItem>
-              { !isAuthenticated() &&
-              <NavLink onClick={this.login}>Login</NavLink>
-              }
-              { isAuthenticated() &&
-              <NavLink onClick={this.logout}>Logout</NavLink>
-              }
             </NavItem>
           </Nav>
         </Collapse>
