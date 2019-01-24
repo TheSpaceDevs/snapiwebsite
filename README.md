@@ -13,6 +13,9 @@ Fork this repo, make your change and create a pull-request.
 ### Contact
 Feel free to contact us over at Discord (https://discord.gg/9FaQdny) or Twitter (https://twitter.com/the_snapi)
 
+### v1.3.0
+Removed Auth0 integration and added some rewrite rules. Also adjusted some badges accordingly.
+
 ### v1.1.0
 Added functionality to login.
 
