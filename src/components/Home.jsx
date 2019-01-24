@@ -1,14 +1,5 @@
-import React, { Component } from "react";
-import {
-  Badge,
-  Button,
-  Card,
-  CardBody, CardHeader,
-  Col,
-  Container,
-  Jumbotron,
-  Row
-} from "reactstrap";
+import React, {Component} from "react";
+import {Badge, Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
 
 import HeaderImage from "./assets/header.jpg";
 
@@ -52,7 +43,7 @@ class Home extends Component {
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">ISS</CardHeader>
                 <CardBody>
-                  Want to get the latest ISS data? check the /iss endpoint.
+                  Want to get the latest ISS data? check the /iss endpoint <Badge color="danger">Deprecated</Badge>.
                 </CardBody>
               </Card>
             </Col>
@@ -60,7 +51,7 @@ class Home extends Component {
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Manned Flights</CardHeader>
                 <CardBody>
-                  Retrieve data about all manned spaceflights <Badge color="info">WIP</Badge>.
+                  Retrieve data about all manned spaceflights <Badge color="danger">Deprecated</Badge>.
                 </CardBody>
               </Card>
             </Col>
@@ -68,7 +59,7 @@ class Home extends Component {
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Astronauts</CardHeader>
                 <CardBody>
-                  Want to know more about astronauts? /astronauts <Badge color="info">WIP</Badge>.
+                  Want to know more about astronauts? /astronauts <Badge color="danger">Deprecated</Badge>.
                 </CardBody>
               </Card>
             </Col>
