@@ -1,5 +1,5 @@
 [[redirects]]
-from = "/v1"
+from = "/v1*"
 to = "http://spaceflightnewsapi-dev.eu-central-1.elasticbeanstalk.com"
 status = 302
 force = true
