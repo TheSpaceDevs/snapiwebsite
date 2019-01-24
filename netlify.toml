@@ -1,0 +1,9 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/v1/*"
+  to = "http://spaceflightnewsapi-dev.eu-central-1.elasticbeanstalk.com"
+  status = 200
