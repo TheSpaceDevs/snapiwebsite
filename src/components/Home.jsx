@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
 
 import HeaderImage from "./assets/header.jpg";
-import history from './utils/history';
 
 class Home extends Component {
   render() {
@@ -17,7 +16,7 @@ class Home extends Component {
           <hr className="my-2"/>
           <p>Ready to begin?</p>
           <p className="lead">
-            <Button onClick={() => history.push('/api/v1/')}
+            <Button onClick={() => window.open('https://test.spaceflightnewsapi.net/api/v1')}
                     color="primary">Go To Docs</Button>
           </p>
         </Jumbotron>
