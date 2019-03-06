@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Badge, Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
+import {Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
 
 import HeaderImage from "./assets/header.jpg";
 
@@ -23,43 +23,19 @@ class Home extends Component {
         <Container>
           <h1>Features</h1>
           <Row>
-            <Col xs={12} sm={4}>
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">Latest News</CardHeader>
+                <CardHeader tag="h4">Articles</CardHeader>
                 <CardBody>
                   Add spaceflight related news to your websites and apps.
                 </CardBody>
               </Card>
             </Col>
-            <Col xs={12} sm={4}>
+            <Col xs={12} sm={6}>
               <Card className="card text-white bg-secondary mb-3">
                 <CardHeader tag="h4">Blogs</CardHeader>
                 <CardBody>
                   There are many great space related blogs. Add them easily!
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs={12} sm={4}>
-              <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">ISS</CardHeader>
-                <CardBody>
-                  Want to get the latest ISS data? check the /iss endpoint <Badge color="danger">Deprecated</Badge>.
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs={12} sm={6}>
-              <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">Manned Flights</CardHeader>
-                <CardBody>
-                  Retrieve data about all manned spaceflights <Badge color="danger">Deprecated</Badge>.
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs={12} sm={6}>
-              <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">Astronauts</CardHeader>
-                <CardBody>
-                  Want to know more about astronauts? /astronauts <Badge color="danger">Deprecated</Badge>.
                 </CardBody>
               </Card>
             </Col>
