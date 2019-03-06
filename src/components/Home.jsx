@@ -17,7 +17,7 @@ class Home extends Component {
           <hr className="my-2"/>
           <p>Ready to begin?</p>
           <p className="lead">
-            <Button onClick={() => history.push('/api/v1')}
+            <Button onClick={() => history.push('/api/v1/')}
                     color="primary">Go To Docs</Button>
           </p>
         </Jumbotron>
