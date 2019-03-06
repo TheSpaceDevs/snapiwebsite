@@ -1,14 +1,17 @@
-import React, {Component} from "react";
-import {Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
+import React, { Component } from "react";
+// import { Card, CardImg, CardText, CardBody, CardTitle, CardSubtitle, Button, Row, Col } from "reactstrap";
+import LatestNewsCard from "./LatestNewsCard";
 
 
-class LatesNews extends Component {
+class LatestNews extends Component {
   render() {
     return (
       <div style={{ textAlign: "center" }}>
+        <h1>Latest News</h1>
+        <LatestNewsCard/>
       </div>
     );
   }
 }
 
-export default LatesNews;
+export default LatestNews;

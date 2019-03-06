@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
+import LatestNews from './LatestNews';
 
 import HeaderImage from "./assets/header.jpg";
 
@@ -40,6 +41,9 @@ class Home extends Component {
               </Card>
             </Col>
           </Row>
+        </Container>
+        <Container>
+          <LatestNews/>
         </Container>
       </div>
     );
