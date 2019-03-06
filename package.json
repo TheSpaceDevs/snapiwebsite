@@ -7,7 +7,6 @@
     "url": "https://github.com/spaceflightnewsapi/snapiwebsite"
   },
   "dependencies": {
-    "auth0-js": "^9.9.1",
     "bootstrap": "^4.2.1",
     "history": "latest",
     "jquery": "^3.3.1",
