@@ -1,8 +1,8 @@
 import React, {Component} from "react";
-import {Button, Card, CardBody, CardHeader, Col, Container, Jumbotron, Row} from "reactstrap";
-import LatestNews from './LatestNews';
+import {Button, Container, Jumbotron} from "reactstrap";
 
 import HeaderImage from "./assets/header.jpg";
+import LatestNews from "./LatestNews";
 
 class Home extends Component {
   render() {
@@ -21,27 +21,6 @@ class Home extends Component {
                     color="primary">Go To Docs</Button>
           </p>
         </Jumbotron>
-        <Container>
-          <h1>Features</h1>
-          <Row>
-            <Col xs={12} sm={6}>
-              <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">Articles</CardHeader>
-                <CardBody>
-                  Add spaceflight related news to your websites and apps.
-                </CardBody>
-              </Card>
-            </Col>
-            <Col xs={12} sm={6}>
-              <Card className="card text-white bg-secondary mb-3">
-                <CardHeader tag="h4">Blogs</CardHeader>
-                <CardBody>
-                  There are many great space related blogs. Add them easily!
-                </CardBody>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
         <Container>
           <LatestNews/>
         </Container>
