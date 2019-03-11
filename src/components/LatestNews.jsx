@@ -45,13 +45,13 @@ class LatestNews extends Component {
         <h1>Latest</h1>
         <Row>
           <Col xs={12} sm={6}>
-            <h2>Articles</h2>
+            <h3>Articles</h3>
             <ListGroup flush>
               {listArticles}
             </ListGroup>
           </Col>
           <Col xs={12} sm={6}>
-            <h2>Blogs</h2>
+            <h3>Blogs</h3>
             <ListGroup flush>
               {listBlogs}
             </ListGroup>
