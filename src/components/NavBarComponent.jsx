@@ -32,7 +32,7 @@ class NavBarComponent extends Component {
   render() {
     return (
       <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <NavbarBrand href="/">Spaceflight News API</NavbarBrand>
+        <NavbarBrand href="/"><h3>Spaceflight News API</h3></NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} className="mr-2"/>
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>

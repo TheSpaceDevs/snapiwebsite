@@ -3,6 +3,7 @@ import {Button, Container, Jumbotron} from "reactstrap";
 
 import HeaderImage from "./assets/header.jpg";
 import LatestNews from "./LatestNews";
+import About from "./About";
 
 class Home extends Component {
   selectUrl = () => {
@@ -26,6 +27,7 @@ class Home extends Component {
           </p>
         </Jumbotron>
         <Container>
+          <About/>
           <LatestNews/>
         </Container>
       </div>
