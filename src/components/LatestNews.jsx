@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Col, Row, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText } from "reactstrap";
+import { Col, ListGroup, ListGroupItem, ListGroupItemHeading, ListGroupItemText, Row } from "reactstrap";
 import axios from "axios";
 
 
@@ -9,13 +9,17 @@ class LatestNews extends Component {
     blogs: []
   };
 
+  selectUrl = () => {
+    return (process.env.NODE_ENV) === 'production' ? "https://spaceflightnewsapi.net" : "https://test.spaceflightnewsapi.net"
+  };
+
   async componentWillMount() {
-    let news = await axios.get("https://test.spaceflightnewsapi.net/api/v1/articles?limit=5");
+    let news = await axios.get(`${this.selectUrl()}/api/v1/articles?limit=5`);
     this.setState({
       news: news.data.docs
     });
 
-    let blogs = await axios.get("https://test.spaceflightnewsapi.net/api/v1/blogs?limit=5");
+    let blogs = await axios.get(`${this.selectUrl()}/api/v1/blogs?limit=5`);
     this.setState({
       blogs: blogs.data.docs
     });
