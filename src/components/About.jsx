@@ -18,7 +18,7 @@ class About extends Component {
             While building the API, and inspired by Launch Library, I decided to plubish the API for other developers to
             use.
             <br/><br/>
-            If you have any questions, don’t hesitate to contact us through the options as seen on the website, or mail
+            If you have any questions, don’t hesitate to contact me through social media and Discord, or mail
             me at <a href='mailto:derk@spaceflightnewsapi.net'>derk@spaceflightnewsapi.net</a>
           </p>
         </div>

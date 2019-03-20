@@ -29,15 +29,19 @@ class NavBarComponent extends Component {
     });
   }
 
+  selectUrl = () => {
+    return (process.env.NODE_ENV) === 'production' ? "https://spaceflightnewsapi.net" : "https://test.spaceflightnewsapi.net"
+  };
+
   render() {
     return (
       <Navbar className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <NavbarBrand href="/"><h3>Spaceflight News API</h3></NavbarBrand>
+        <NavbarBrand href="/"><h4>Spaceflight News API</h4></NavbarBrand>
         <NavbarToggler onClick={this.toggleNavbar} className="mr-2"/>
         <Collapse isOpen={!this.state.collapsed} navbar>
           <Nav className="ml-auto" navbar>
             <NavItem>
-              <NavLink href="https://spaceflight-news-api.readthedocs.io/en/latest/" target="_blank">API
+              <NavLink href={`${this.selectUrl()}/api/v1`}>API
                 Documentation</NavLink>
             </NavItem>
             <UncontrolledDropdown nav inNavbar>
