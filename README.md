@@ -13,6 +13,10 @@ Fork this repo, make your change and create a pull-request.
 ### Contact
 Feel free to contact us over at Discord (https://discord.gg/9FaQdny) or Twitter (https://twitter.com/the_snapi)
 
+### v1.4.0
+Removed the badges and introduced a small example of what the API can do.
+Also introduced a little footer and added a link to the kind people of JetBrains.
+
 ### v1.3.0
 Removed Auth0 integration and added some rewrite rules. Also adjusted some badges accordingly.
 
