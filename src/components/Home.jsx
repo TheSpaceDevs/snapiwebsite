@@ -25,6 +25,7 @@ class Home extends Component {
             <Button onClick={() => window.open(`${this.selectUrl()}/api/v1`)}
                     color="primary">Go To Docs</Button>
           </p>
+          <a href="https://www.patreon.com/bePatron?u=8565105" data-patreon-widget-type="become-patron-button">Become a Patron!</a>
         </Jumbotron>
         <Container>
           <About/>

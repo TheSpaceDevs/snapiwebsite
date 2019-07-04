@@ -6,9 +6,9 @@ class Footer extends Component {
     return (
       <div>
         <footer style={styles.footer}>
-          <Link to='/pp/'>Privacy Policy</Link> -
-          <Link to='/tos/'>Terms of Use</Link> -
-          <a href='https://www.jetbrains.com/?from=SpaceflightNewsAPI' target='_blank' rel="noopener noreferrer">Jetbrains Software</a>
+          <Link style={styles.text} to='/pp/'>Privacy Policy</Link> -
+          <Link style={styles.text} to='/tos/'>Terms of Use</Link> -
+          <a style={styles.text} href='https://www.jetbrains.com/?from=SpaceflightNewsAPI' target='_blank' rel="noopener noreferrer">Jetbrains Software</a>
         </footer>
       </div>
     );
@@ -17,10 +17,13 @@ class Footer extends Component {
 
 const styles = {
   footer: {
-    backgroundColor: '#2c3e50',
+    backgroundColor: '#2196F3',
     color: 'white',
     padding: 5,
     textAlign: 'center'
+  },
+  text: {
+    color: 'white'
   }
 };
 
