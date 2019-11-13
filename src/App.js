@@ -1,15 +1,15 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
+    Router,
     Switch,
     Route,
 } from "react-router-dom";
 import { createBrowserHistory } from "history";
 
 import NavBar from "./components/NavBar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Apps from "./components/Apps";
+import Home from "./screens/Home";
+import About from "./screens/About";
+import Apps from "./screens/Apps";
 
 const appHistory = createBrowserHistory();
 
