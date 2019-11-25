@@ -13,7 +13,7 @@ export default function Header() {
           <Nav.Link as={Link} to="/pricing">Pricing</Nav.Link>
         </Nav>
         <Nav>
-        <Nav.Link as={Link} to="/pricing">API Docs</Nav.Link>
+        <Nav.Link href="https://spaceflightnewsapi.net/api/v1/" target='_blank noopener noreferrer' >API Docs</Nav.Link>
         </Nav>
       </Navbar>
     )

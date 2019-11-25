@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 import { NewsCard } from "../components";
 
@@ -17,18 +20,21 @@ function LatestNews() {
   }, []);
 
   return (
-    <div>
-      {articles.map(article => {
-        return (
-          <NewsCard
-            key={article._id}
-            title={article.title}
-            site={article.news_site_long}
-            url={article.url}
-          />
-        );
-      })}
-    </div>
+    <Container>
+      <Row>
+        {articles.map(article => {
+          return (
+            <Col key={article._id}>
+              <NewsCard
+                title={article.title}
+                site={article.news_site_long}
+                url={article.url}
+              />
+            </Col>
+          );
+        })}
+      </Row>
+    </Container>
   );
 }
 

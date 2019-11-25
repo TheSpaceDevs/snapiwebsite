@@ -1,6 +1,6 @@
 import React from "react";
 
-import { NewsCard, LatestNews } from "../components";
+import { LatestNews } from "../components";
 
 function Home(props) {
   return <LatestNews />;
