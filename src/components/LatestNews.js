@@ -1,38 +1,35 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import axios from "axios";
-import {Button, Card} from "react-bootstrap";
 
-const LatestNews = () => {
-    const [articles, setArticles] = useState([]);
+import { NewsCard } from "../components";
 
-    console.log(articles);
+function LatestNews() {
+  const [articles, setArticles] = useState([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const result = await axios(
-                `https://snapi.space/api/v1/articles`,
-            );
-            setArticles(result.data.docs);
-        };
-        fetchData();
-    }, []);
+  useEffect(() => {
+    async function getData() {
+      const results = await axios.get(
+        "https://spaceflightnewsapi.net/api/v1/articles"
+      );
+      setArticles(results.data.docs);
+    }
+    getData();
+  }, []);
 
-    return (
-        <div>
-            {articles.map((article) => (
-                <Card key={article._id} style={{ width: '18rem' }}>
-                    <Card.Img style={{height: '300px', resizeMode: 'center'}} variant="top" src={article.featured_image} />
-                    <Card.Body>
-                        <Card.Title>{article.title}</Card.Title>
-                        <Card.Text>
-                            {article.news_site_long}
-                        </Card.Text>
-                        <Button variant="primary">Go somewhere</Button>
-                    </Card.Body>
-                </Card>
-            ))}
-        </div>
-    );
-};
+  return (
+    <div>
+      {articles.map(article => {
+        return (
+          <NewsCard
+            key={article._id}
+            title={article.title}
+            site={article.news_site_long}
+            url={article.url}
+          />
+        );
+      })}
+    </div>
+  );
+}
 
 export default LatestNews;

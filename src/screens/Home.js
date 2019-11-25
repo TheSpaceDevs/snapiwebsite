@@ -1,13 +1,9 @@
-import React from 'react';
-import {Container} from "react-bootstrap";
-import LatestNews from "../components/LatestNews";
+import React from "react";
 
-const Home = () => {
-    return (
-        <Container>
-            <LatestNews/>
-        </Container>
-    );
-};
+import { NewsCard, LatestNews } from "../components";
+
+function Home(props) {
+  return <LatestNews />;
+}
 
 export default Home;

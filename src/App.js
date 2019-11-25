@@ -1,35 +1,21 @@
-import React from 'react';
-import {
-    Router,
-    Switch,
-    Route,
-} from "react-router-dom";
-import { createBrowserHistory } from "history";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import NavBar from "./components/NavBar";
-import Home from "./screens/Home";
-import About from "./screens/About";
-import Apps from "./screens/Apps";
+import { Home, Gallery } from "./screens";
+import { Header } from "./components";
 
-const appHistory = createBrowserHistory();
-
-function App() {
-    return (
-        <Router history={appHistory}>
-            <NavBar/>
-            <Switch>
-                <Route path="/apps">
-                    <Apps />
-                </Route>
-                <Route path="/about">
-                    <About />
-                </Route>
-                <Route path="/">
-                    <Home />
-                </Route>
-            </Switch>
-        </Router>
-    );
+export default function App() {
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/gallery">
+          <Gallery />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
-
-export default App;
