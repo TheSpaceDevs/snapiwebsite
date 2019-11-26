@@ -14,6 +14,7 @@ export default function Header() {
         </Nav>
         <Nav>
         <Nav.Link href="https://spaceflightnewsapi.net/api/v1/" target='_blank noopener noreferrer' >API Docs</Nav.Link>
+        <Nav.Link href="https://spaceflightnewsapi.net/api/v1/" target='_blank noopener noreferrer' >Discord Bot</Nav.Link>
         </Nav>
       </Navbar>
     )
