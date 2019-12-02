@@ -23,9 +23,6 @@ function LatestNews() {
   return (
     <Container>
       <Row>
-        <h1>News</h1>
-      </Row>
-      <Row>
         {articles.map(article => {
           return (
             <Col key={article._id} style={styles.colStyle}>
