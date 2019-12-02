@@ -2,10 +2,11 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 function NewsCard(props) {
-  const { title, site, url, date } = props;
+  const {title, site, url, date, image} = props;
 
   return (
     <Card style={styles.card}>
+      <Card.Img variant="top" src={image} style={{height: "180px"}} />
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{site}</Card.Subtitle>
@@ -20,10 +21,9 @@ function NewsCard(props) {
 
 const styles = {
   card: {
-    width: "15rem",
-    height: "18rem",
-    margin: 5
+    width: "17rem",
+    height: "26rem"
   }
-}
+};
 
 export default NewsCard;

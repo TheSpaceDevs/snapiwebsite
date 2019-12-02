@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-import { NewsCard } from "../components";
+import {NewsCard} from "../components";
 
 function LatestNews() {
   const [articles, setArticles] = useState([]);
@@ -14,36 +16,40 @@ function LatestNews() {
       );
       setArticles(results.data.docs);
     }
+
     getData();
   }, []);
 
   return (
-    <Container style={styles.container}>
-      <Container>
+    <Container>
+      <Row>
         <h1>News</h1>
-      </Container>
+      </Row>
+      <Row>
         {articles.map(article => {
           return (
-            <NewsCard
-              key={article._id}
-              title={article.title}
-              site={article.news_site_long}
-              url={article.url}
-              date={article.published_date}
-            />
+            <Col key={article._id} style={styles.colStyle}>
+              <NewsCard
+                title={article.title}
+                site={article.news_site_long}
+                url={article.url}
+                date={article.published_date}
+                image={article.featured_image}
+              />
+            </Col>
           );
         })}
-    </Container >
+      </Row>
+    </Container>
   );
 }
 
 const styles = {
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'center'
+  colStyle: {
+    padding: 0,
+    margin: 5
   }
-}
+};
 
 
 export default LatestNews;
