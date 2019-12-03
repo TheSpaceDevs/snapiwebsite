@@ -6,13 +6,13 @@ import Col from 'react-bootstrap/Col';
 
 import {NewsCard} from "../components";
 
-function LatestNews() {
+function LatestBlogs() {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
     async function getData() {
       const results = await axios.get(
-        `https://spaceflightnewsapi.net/api/v1/articles?limit=8`
+        `https://spaceflightnewsapi.net/api/v1/blogs?limit=8`
       );
       setArticles(results.data.docs);
     }
@@ -49,4 +49,4 @@ const styles = {
 };
 
 
-export default LatestNews;
+export default LatestBlogs;

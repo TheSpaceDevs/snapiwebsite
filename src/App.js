@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import { Home, Apps } from "./screens";
+import {Home, Apps, Blogs} from "./screens";
 import { Header } from "./components";
 
 export default function App() {
@@ -9,6 +9,9 @@ export default function App() {
     <Router>
       <Header />
       <Switch>
+        <Route path="/blogs">
+          <Blogs />
+        </Route>
         <Route path="/apps">
           <Apps />
         </Route>
