@@ -2,8 +2,8 @@ import React from "react";
 
 import { LatestNews } from "../components";
 
-function Home(props) {
+function News(props) {
   return <LatestNews />;
 }
 
-export default Home;
+export default News;
