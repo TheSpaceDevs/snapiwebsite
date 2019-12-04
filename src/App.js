@@ -1,28 +1,30 @@
-import React, {Component} from "react";
-import {Route, Router} from "react-router-dom";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import NavBarComponent from "./components/NavBarComponent";
-import Home from "./components/Home";
-import Tos from './components/Tos'
-import Pp from './components/Pp'
-import history from './components/utils/history';
-import Footer from "./components/Footer";
+import {News, Apps, Blogs, Reports, Info} from "./screens";
+import { Header } from "./components";
 
-class App extends Component {
-  render() {
-    return (
-      <Router history={history} component={Home}>
-        <div className="App">
-          <NavBarComponent/>
-          <Route path="/" exact component={Home}/>
-          <Route path="/tos" exact component={Tos}/>
-          <Route path="/pp" exact component={Pp}/>
-          <Footer/>
-        </div>
-      </Router>
-    );
-  }
+export default function App() {
+  return (
+    <Router>
+      <Header />
+      <Switch>
+        <Route path="/info">
+          <Info />
+        </Route>
+        <Route path="/reports">
+          <Reports />
+        </Route>
+        <Route path="/blogs">
+          <Blogs />
+        </Route>
+        <Route path="/apps">
+          <Apps />
+        </Route>
+        <Route path="/">
+          <News />
+        </Route>
+      </Switch>
+    </Router>
+  );
 }
-
-export default App;

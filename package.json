@@ -1,23 +1,15 @@
 {
   "name": "snapiwebsite",
-  "version": "1.8.0",
-  "author": "Derk Weijers <derk@spaceflightnewsapi.net (https://snapi.space)",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/spaceflightnewsapi/snapiwebsite"
-  },
+  "version": "2.0.0",
+  "private": true,
   "dependencies": {
     "axios": "^0.19.0",
-    "bootstrap": "^4.3.1",
-    "history": "^4.10.1",
-    "jquery": "^3.4.1",
-    "popper.js": "^1.16.0",
-    "react": "^16.11.0",
-    "react-adsense": "^0.1.0",
-    "react-dom": "^16.11.0",
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.0.0-beta.16",
+    "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.2.0",
-    "reactstrap": "^8.1.1"
+    "react-scripts": "3.2.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -28,10 +20,19 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "reactotron-react-js": "^3.3.7"
+  }
 }
