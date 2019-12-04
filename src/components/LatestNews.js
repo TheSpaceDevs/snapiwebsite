@@ -44,7 +44,7 @@ function LatestNews() {
 const styles = {
   colStyle: {
     padding: 0,
-    margin: 5
+    margin: 5,
   }
 };
 

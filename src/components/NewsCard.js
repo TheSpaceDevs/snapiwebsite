@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Container from "react-bootstrap/Container";
 
 function NewsCard(props) {
   const {title, site, url, date, image} = props;
