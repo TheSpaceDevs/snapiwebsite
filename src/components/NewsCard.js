@@ -8,7 +8,7 @@ function NewsCard(props) {
   return (
     <Card style={styles.card}>
       <Card.Img variant="top" src={image} style={{height: "180px"}} />
-      <Card.Body style={{paddingBottom: 0}}>
+      <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{site}</Card.Subtitle>
         <div style={{position: 'absolute', bottom: 0, marginBottom: '50px'}}>
