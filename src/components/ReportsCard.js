@@ -2,14 +2,19 @@ import React from "react";
 import Card from "react-bootstrap/Card";
 
 function ReportsCard(props) {
-  const {title, site, url, date} = props;
+  const {title, site, url, date, summary} = props;
 
   return (
     <Card style={styles.card}>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{site}</Card.Subtitle>
-        <Card.Link href={url} target='_blank noopener noreferrer'>Read more...</Card.Link>
+        <Card.Text>
+          {summary}
+        </Card.Text>
+        <div style={{position: 'absolute', bottom: 0, marginBottom: '50px'}}>
+          <Card.Link href={url} target='_blank noopener noreferrer'>Read</Card.Link>
+        </div>
       </Card.Body>
       <Card.Footer>
         {new Date(date).toLocaleDateString()}
@@ -21,7 +26,7 @@ function ReportsCard(props) {
 const styles = {
   card: {
     width: "17rem",
-    height: "15rem"
+    height: "31rem"
   }
 };
 

@@ -31,6 +31,7 @@ function LatestReports() {
                 site={article.news_site_long}
                 url={article.url}
                 date={article.published_date}
+                summary={article.summary}
               />
             </Col>
           );
