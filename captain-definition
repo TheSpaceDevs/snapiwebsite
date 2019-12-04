@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "dockerfileLines": [
     "FROM socialengine/nginx-spa:latest",
-    "RUN npm run build"
+    "RUN npm run build",
     "COPY ./build /app",
     "RUN chmod -R 777 /app"
   ]
