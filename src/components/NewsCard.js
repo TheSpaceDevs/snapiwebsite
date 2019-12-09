@@ -23,7 +23,6 @@ function NewsCard(props) {
 
 const styles = {
   card: {
-    width: "17rem",
     height: "26rem"
   }
 };

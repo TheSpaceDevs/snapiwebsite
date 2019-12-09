@@ -25,7 +25,7 @@ function LatestBlogs() {
       <Row>
         {articles.map(article => {
           return (
-            <Col key={article._id} style={styles.colStyle}>
+            <Col sm={3} key={article._id} style={styles.colStyle}>
               <NewsCard
                 title={article.title}
                 site={article.news_site_long}
@@ -43,8 +43,8 @@ function LatestBlogs() {
 
 const styles = {
   colStyle: {
-    padding: 0,
-    margin: 5
+    padding: 3,
+    marginTop: 5
   }
 };
 

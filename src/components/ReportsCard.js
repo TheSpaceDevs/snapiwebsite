@@ -16,7 +16,7 @@ function ReportsCard(props) {
           <Card.Link href={url} target='_blank noopener noreferrer'>Read</Card.Link>
         </div>
       </Card.Body>
-      <Card.Footer>
+      <Card.Footer className="text-muted">
         {new Date(date).toLocaleDateString()}
       </Card.Footer>
     </Card>
@@ -25,7 +25,6 @@ function ReportsCard(props) {
 
 const styles = {
   card: {
-    width: "17rem",
     height: "31rem"
   }
 };
