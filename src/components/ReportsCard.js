@@ -5,27 +5,29 @@ function ReportsCard(props) {
   const {title, site, url, date, summary} = props;
 
   return (
-    <Card style={styles.card}>
+    <Card style={styles.card} className='shadow'>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{site}</Card.Subtitle>
+        <Card.Subtitle className="mb-2 text-muted">{`${site} | ${new Date(date).toLocaleDateString()}`}</Card.Subtitle>
         <Card.Text>
           {summary}
         </Card.Text>
-        <div style={{position: 'absolute', bottom: 0, marginBottom: '50px'}}>
+        <div style={styles.linkStyle}>
           <Card.Link href={url} target='_blank noopener noreferrer'>Read</Card.Link>
         </div>
       </Card.Body>
-      <Card.Footer className="text-muted">
-        {new Date(date).toLocaleDateString()}
-      </Card.Footer>
     </Card>
   );
 }
 
 const styles = {
   card: {
-    height: "31rem"
+    height: "28rem"
+  },
+  linkStyle: {
+    position: 'absolute',
+    bottom: 0,
+    marginBottom: '5px'
   }
 };
 

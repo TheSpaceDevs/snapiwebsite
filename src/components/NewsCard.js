@@ -5,25 +5,27 @@ function NewsCard(props) {
   const {title, site, url, date, image} = props;
 
   return (
-    <Card style={styles.card}>
-      <Card.Img variant="top" src={image} style={{height: "180px"}} />
+    <Card style={styles.card} className='shadow'>
+      <Card.Img variant="top" src={image} style={{height: "180px"}}/>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">{site}</Card.Subtitle>
-        <div style={{position: 'absolute', bottom: 0, marginBottom: '50px'}}>
+        <Card.Subtitle className="mb-2 text-muted">{`${site} | ${new Date(date).toLocaleDateString()}`}</Card.Subtitle>
+        <div style={styles.linkStyle}>
           <Card.Link href={url} target='_blank noopener noreferrer'>Read</Card.Link>
         </div>
       </Card.Body>
-      <Card.Footer className="text-muted">
-        {new Date(date).toLocaleDateString()}
-      </Card.Footer>
     </Card>
   );
 }
 
 const styles = {
   card: {
-    height: "26rem"
+    height: "23rem"
+  },
+  linkStyle: {
+    position: 'absolute',
+    bottom: 0,
+    marginBottom: '5px'
   }
 };
 
