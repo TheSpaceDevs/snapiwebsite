@@ -14,7 +14,7 @@ export default function Header() {
           <Nav.Link as={Link} to="/">News</Nav.Link>
           <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
           <Nav.Link as={Link} to="/reports">Reports</Nav.Link>
-          {/*<Nav.Link as={Link} to="/apps">Apps</Nav.Link>*/}
+          <Nav.Link as={Link} to="/apps">Apps</Nav.Link>
           {/*<Nav.Link as={Link} to="/info">Info</Nav.Link>*/}
         </Nav>
         <Nav>
