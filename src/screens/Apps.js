@@ -5,7 +5,6 @@ import Col from "react-bootstrap/Col";
 
 import {AppCard} from "../components";
 import firebase from "../firebase";
-import axios from "axios";
 
 const db = firebase.firestore();
 
@@ -15,7 +14,7 @@ export default function Apps() {
   useEffect(() => {
     db.collection("apps").get().then((querySnapshot) => {
       querySnapshot.forEach((app) => {
-        setApps(app.data())
+        setApps((oldArray) => [...oldArray, app.data()])
       })
     });
   }, []);
@@ -24,9 +23,14 @@ export default function Apps() {
     <Container>
       {console.log(apps)}
       <Row>
-        <Col sm={4} >
-          <AppCard/>
-        </Col>
+        {apps.map((app => {
+          return (
+            <Col key={app.name} sm={4}>
+              <AppCard app={app}
+              />
+            </Col>
+          )
+        }))}
       </Row>
     </Container>
   )
