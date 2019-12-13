@@ -25,7 +25,7 @@ export default function Apps() {
       <Row>
         {apps.map((app => {
           return (
-            <Col key={app.name} >
+            <Col lg={4} sm={6} key={app.name} >
               <AppCard app={app}
               />
             </Col>
