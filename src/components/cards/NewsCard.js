@@ -6,7 +6,7 @@ function NewsCard(props) {
 
   return (
     <Card style={styles.card} className='shadow'>
-      <Card.Img variant="top" src={image} style={{height: "180px"}}/>
+      <Card.Img variant="top" src={image} style={{height: "15rem"}}/>
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{`${site} | ${new Date(date).toLocaleDateString()}`}</Card.Subtitle>
@@ -20,7 +20,8 @@ function NewsCard(props) {
 
 const styles = {
   card: {
-    height: "23rem"
+    height: "30rem",
+    marginTop: 5
   },
   linkStyle: {
     position: 'absolute',

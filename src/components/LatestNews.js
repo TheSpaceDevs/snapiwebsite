@@ -25,7 +25,7 @@ function LatestNews() {
       <Row>
         {articles.map(article => {
           return (
-            <Col sm={3} key={article._id} style={styles.colStyle}>
+            <Col xl={3} lg={4} sm={6} key={article._id} >
               <NewsCard
                 title={article.title}
                 site={article.news_site_long}
@@ -39,13 +39,6 @@ function LatestNews() {
       </Row>
     </Container>
   );
-}
-
-const styles = {
-  colStyle: {
-    padding: 3,
-    marginTop: 5
-  }
 };
 
 
