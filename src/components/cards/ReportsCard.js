@@ -9,7 +9,7 @@ function ReportsCard(props) {
       <Card.Body>
         <Card.Title>{title}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{`${site} | ${new Date(date).toLocaleDateString()}`}</Card.Subtitle>
-        <Card.Text>
+        <Card.Text className="text-truncate text-wrap">
           {summary}
         </Card.Text>
         <div style={styles.linkStyle}>
@@ -22,7 +22,7 @@ function ReportsCard(props) {
 
 const styles = {
   card: {
-    height: "28rem"
+    height: "25rem"
   },
   linkStyle: {
     position: 'absolute',

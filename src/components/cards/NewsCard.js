@@ -20,8 +20,7 @@ function NewsCard(props) {
 
 const styles = {
   card: {
-    height: "30rem",
-    marginTop: 5
+    height: "27rem"
   },
   linkStyle: {
     position: 'absolute',
