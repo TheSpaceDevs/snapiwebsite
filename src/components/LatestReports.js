@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 import {ReportsCard} from "../components";
+import {ColStyle} from "../styles";
 
 function LatestReports() {
   const [articles, setArticles] = useState([]);
@@ -12,7 +13,7 @@ function LatestReports() {
   useEffect(() => {
     async function getData() {
       const results = await axios.get(
-        `https://spaceflightnewsapi.net/api/v1/reports?limit=8`
+        `https://spaceflightnewsapi.net/api/v1/reports?limit=6`
       );
       setArticles(results.data.docs);
     }
@@ -25,7 +26,7 @@ function LatestReports() {
       <Row>
         {articles.map(article => {
           return (
-            <Col sm={3} key={article._id} style={styles.colStyle}>
+            <Col xl={4} lg={4} sm={6} key={article._id} style={ColStyle}>
               <ReportsCard
                 title={article.title}
                 site={article.news_site_long}
@@ -40,13 +41,6 @@ function LatestReports() {
     </Container>
   );
 }
-
-const styles = {
-  colStyle: {
-    padding: 3,
-    marginTop: 5
-  }
-};
 
 
 export default LatestReports;
