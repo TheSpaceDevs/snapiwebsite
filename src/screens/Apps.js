@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 
 import {AppCard} from "../components";
 import firebase from "../firebase";
+import {ColStyle} from "../styles";
 
 const db = firebase.firestore();
 
@@ -24,7 +25,7 @@ export default function Apps() {
       <Row>
         {apps.map((app => {
           return (
-            <Col lg={4} sm={6} key={app.name} >
+            <Col lg={4} sm={6} key={app.name} style={ColStyle} >
               <AppCard app={app}
               />
             </Col>
