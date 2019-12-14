@@ -21,7 +21,6 @@ export default function Apps() {
 
   return (
     <Container>
-      {console.log(apps)}
       <Row>
         {apps.map((app => {
           return (
