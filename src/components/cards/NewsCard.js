@@ -8,7 +8,7 @@ function NewsCard(props) {
     <Card style={{height: "100%"}} className='shadow'>
       <Card.Img variant="top" src={image} style={{height: "15rem"}}/>
       <Card.Body>
-        <Card.Title>{<a href={url}>{title}</a>}</Card.Title>
+        <Card.Title><a href={url} target='_blank noopener noreferrer'>{title}</a></Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{`${site} | ${new Date(date).toLocaleDateString()}`}</Card.Subtitle>
       </Card.Body>
     </Card>

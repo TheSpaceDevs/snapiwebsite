@@ -26,7 +26,7 @@ function LatestReports() {
       <Row>
         {articles.map(article => {
           return (
-            <Col xl={4} lg={4} sm={12} key={article._id} style={ColStyle}>
+            <Col xl={4} lg={4} sm={6} key={article._id} style={ColStyle}>
               <ReportsCard
                 title={article.title}
                 site={article.news_site_long}
