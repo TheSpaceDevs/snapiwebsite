@@ -28,43 +28,46 @@ function LatestBlogs() {
       console.log(e)
     }
   };
-  if (loading) {
-    return (
-      <Container>
-        <Row>
+
+  return (
+    <Container>
+      <Row className="mt-2 justify-content-center">
+        <h1 className="font-weight-bold">Blogs</h1>
+      </Row>
+      <Row>
+        {loading
+          ?
           <Loading/>
-        </Row>
-      </Container>
-    )
-  } else {
-    return (
-      <Container>
-        <Row>
-          {data.docs.map(article => {
-            return (
-              <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id}>
-                <NewsCard
-                  title={article.title}
-                  site={article.news_site_long}
-                  url={article.url}
-                  date={article.published_date}
-                  image={article.featured_image}
+          :
+          <div>
+            <Row>
+              {data.docs.map(article => {
+                return (
+                  <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id}>
+                    <NewsCard
+                      title={article.title}
+                      site={article.news_site_long}
+                      url={article.url}
+                      date={article.published_date}
+                      image={article.featured_image}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+            <Row>
+              <Col>
+                <CustomPaginate
+                  totalPages={data.totalPages}
+                  setPage={setPage}
                 />
               </Col>
-            );
-          })}
-        </Row>
-        <Row>
-          <Col>
-            <CustomPaginate
-              totalPages={data.totalPages}
-              setPage={setPage}
-            />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+            </Row>
+          </div>
+        }
+      </Row>
+    </Container>
+  );
 }
 
 export default LatestBlogs;
