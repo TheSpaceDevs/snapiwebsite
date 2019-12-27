@@ -1,20 +1,22 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function Header() {
+  const {pathname} = useLocation();
+
   return (
     <Navbar bg="primary" variant="dark" expand="lg">
       <Navbar.Brand as={Link} to="/">Spaceflight News API</Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} to="/">News</Nav.Link>
-          <Nav.Link as={Link} to="/blogs">Blogs</Nav.Link>
-          <Nav.Link as={Link} to="/reports">Reports</Nav.Link>
-          <Nav.Link as={Link} to="/apps">Apps</Nav.Link>
+          <Nav.Link as={Link} active={pathname === "/"} to="/">News</Nav.Link>
+          <Nav.Link as={Link} active={pathname === "/blogs"} to="/blogs">Blogs</Nav.Link>
+          <Nav.Link as={Link} active={pathname === "/reports"} to="/reports">Reports</Nav.Link>
+          <Nav.Link as={Link} active={pathname === "/apps"} to="/apps">Apps</Nav.Link>
           {/*<Nav.Link as={Link} to="/info">Info</Nav.Link>*/}
         </Nav>
         <Nav>
