@@ -11,6 +11,8 @@ const CustomPaginate = ({totalPages, setPage}) => {
       previousClassName="page-link"
       nextClassName="page-link"
       activeClassName="active"
+      breakClassName="page-link"
+      breakLinkClassName="page-item"
       pageCount={totalPages}
       pageRangeDisplayed={10}
       onPageChange={({selected}) => {
