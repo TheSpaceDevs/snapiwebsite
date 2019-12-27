@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 
 import FeaturedCard from "./cards/FeaturedCard";
 import Container from "react-bootstrap/Container";
-import {Loading} from "./index";
+import {LoadingComponent} from "./index";
 
-const FeaturedNews = props => {
+const FeaturedNewsComponent = props => {
   const [featured, setFeatured] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -26,7 +26,7 @@ const FeaturedNews = props => {
       <Row>
         {loading
           ?
-          <Loading/>
+          <LoadingComponent/>
           :
           <Row className="mt-2 justify-content-center" >
             <h1 className="font-weight-bold">Featured</h1>
@@ -51,4 +51,4 @@ const FeaturedNews = props => {
   )
 };
 
-export default FeaturedNews;
+export default FeaturedNewsComponent;

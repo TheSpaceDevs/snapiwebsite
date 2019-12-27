@@ -1,10 +1,10 @@
 import React from 'react';
-import {LatestReports} from "../components";
+import {ReportsComponent} from "../components";
 
 const Reports = () => {
   return (
     <div>
-       <LatestReports/>
+       <ReportsComponent/>
     </div>
   );
 };

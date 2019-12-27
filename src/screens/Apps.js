@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import {AppCard, Loading} from "../components";
+import {AppCard, LoadingComponent} from "../components";
 import firebase from "../firebase";
 import {ColStyle} from "../styles";
 
@@ -34,7 +34,7 @@ export default function Apps() {
       <Row>
         {loading
           ?
-          <Loading/>
+          <LoadingComponent/>
           :
           apps.map((app => {
             return (
