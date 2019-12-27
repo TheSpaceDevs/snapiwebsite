@@ -29,43 +29,45 @@ function LatestReports() {
     }
   };
 
-  if (loading) {
-    return (
-      <Container>
-        <Row>
+  return (
+    <Container>
+      <Row className="mt-2 justify-content-center">
+        <h1 className="font-weight-bold">Reports</h1>
+      </Row>
+      <Row>
+        {loading
+          ?
           <Loading/>
-        </Row>
-      </Container>
-    )
-  } else {
-    return (
-      <Container>
-        <Row>
-          {data.docs.map(article => {
-            return (
-              <Col xl={4} lg={4} sm={6} key={article._id} style={ColStyle}>
-                <ReportsCard
-                  title={article.title}
-                  site={article.news_site_long}
-                  url={article.url}
-                  date={article.published_date}
-                  summary={article.summary}
+          :
+          <div>
+            <Row>
+              {data.docs.map(article => {
+                return (
+                  <Col xl={4} lg={4} sm={6} key={article._id} style={ColStyle}>
+                    <ReportsCard
+                      title={article.title}
+                      site={article.news_site_long}
+                      url={article.url}
+                      date={article.published_date}
+                      summary={article.summary}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+            <Row>
+              <Col>
+                <CustomPaginate
+                  totalPages={data.totalPages}
+                  setPage={setPage}
                 />
               </Col>
-            );
-          })}
-        </Row>
-        <Row>
-          <Col>
-            <CustomPaginate
-              totalPages={data.totalPages}
-              setPage={setPage}
-            />
-          </Col>
-        </Row>
-      </Container>
-    );
-  }
+            </Row>
+          </div>
+        }
+      </Row>
+    </Container>
+  )
 }
 
 

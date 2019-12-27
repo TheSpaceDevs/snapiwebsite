@@ -7,7 +7,7 @@ const FeatutredCard = ({title, image_url, news_site, url}) => {
     <Card style={{height: "100%"}} className="text-white text-center shadow">
       <Card.Link className="text-white font-weight-bold" href={url} target='_blank noopener noreferrer'>
       <Card.Img src={image_url} style={{height: "15rem"}}/>
-      <Card.ImgOverlay>
+      <Card.ImgOverlay className="d-flex flex-column justify-content-center">
         <Card.Title>{title}</Card.Title>
         <Card.Text>{news_site}</Card.Text>
       </Card.ImgOverlay>

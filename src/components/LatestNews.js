@@ -5,6 +5,7 @@ import Col from 'react-bootstrap/Col';
 
 import {NewsCard, Loading, CustomPaginate} from "../components";
 import {ColStyle} from "../styles";
+import Container from "react-bootstrap/Container";
 
 function LatestNews() {
   const [data, setData] = useState([]);
@@ -28,44 +29,45 @@ function LatestNews() {
     }
   };
 
-  if (loading) {
-    return (
-      <>
-        <Row>
-          <Loading/>
-        </Row>
-      </>
-    )
-  } else {
-    return (
-      <Row className="justify-content-center">
+  return (
+    <Container>
+      <Row className="mt-2 justify-content-center">
         <h1 className="font-weight-bold">Latest News</h1>
-        <Row>
-          {data.docs.map(article => {
-            return (
-              <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id} >
-                <NewsCard
-                  title={article.title}
-                  site={article.news_site_long}
-                  url={article.url}
-                  date={article.published_date}
-                  image={article.featured_image}
+      </Row>
+      <Row>
+        {loading
+          ?
+          <Loading/>
+          :
+          <div>
+            <Row>
+              {data.docs.map(article => {
+                return (
+                  <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id} >
+                    <NewsCard
+                      title={article.title}
+                      site={article.news_site_long}
+                      url={article.url}
+                      date={article.published_date}
+                      image={article.featured_image}
+                    />
+                  </Col>
+                );
+              })}
+            </Row>
+            <Row>
+              <Col>
+                <CustomPaginate
+                  totalPages={data.totalPages}
+                  setPage={setPage}
                 />
               </Col>
-            );
-          })}
-        </Row>
-        <Row>
-          <Col>
-            <CustomPaginate
-              totalPages={data.totalPages}
-              setPage={setPage}
-            />
-          </Col>
-        </Row>
+            </Row>
+          </div>
+        }
       </Row>
-    );
-  }
+    </Container>
+  )
 }
 
 export default LatestNews;
