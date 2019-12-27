@@ -4,7 +4,7 @@ import ReactPaginate from "react-paginate";
 const CustomPaginate = ({totalPages, setPage}) => {
   return (
     <ReactPaginate
-      containerClassName="pagination justify-content-center"
+      containerClassName="pagination justify-content-center mb-0 mt-3"
       disabledClassName="disabled"
       pageClassName="page-item"
       pageLinkClassName="page-link"
