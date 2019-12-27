@@ -4,42 +4,68 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {NewsCard} from "../components";
+import {NewsCard, Loading, CustomPaginate} from "../components";
 import {ColStyle} from "../styles";
 
 function LatestNews() {
-  const [articles, setArticles] = useState([]);
+  const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [page, setPage] = useState(0);
 
   useEffect(() => {
-    async function getData() {
-      const results = await axios.get(
-        `https://spaceflightnewsapi.net/api/v1/articles?limit=6`
-      );
-      setArticles(results.data.docs);
-    }
-
     getData();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [page]);
 
-  return (
-    <Container>
-      <Row>
-        {articles.map(article => {
-          return (
-            <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id} >
-              <NewsCard
-                title={article.title}
-                site={article.news_site_long}
-                url={article.url}
-                date={article.published_date}
-                image={article.featured_image}
-              />
-            </Col>
-          );
-        })}
-      </Row>
-    </Container>
-  );
+  const getData = async () => {
+    try {
+      const results = await axios.get(
+        `https://spaceflightnewsapi.net/api/v1/articles?limit=6&page=${page}`
+      );
+      setData(results.data);
+      setLoading(false)
+    } catch (e) {
+      console.log(e)
+    }
+  };
+
+  if (loading) {
+    return (
+      <Container>
+        <Row>
+          <Loading/>
+        </Row>
+      </Container>
+    )
+  } else {
+    return (
+      <Container>
+        <Row>
+          {data.docs.map(article => {
+            return (
+              <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id} >
+                <NewsCard
+                  title={article.title}
+                  site={article.news_site_long}
+                  url={article.url}
+                  date={article.published_date}
+                  image={article.featured_image}
+                />
+              </Col>
+            );
+          })}
+        </Row>
+        <Row>
+          <Col>
+            <CustomPaginate
+              totalPages={data.totalPages}
+              setPage={setPage}
+            />
+          </Col>
+        </Row>
+      </Container>
+    );
+  }
 }
 
 export default LatestNews;
