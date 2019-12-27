@@ -5,3 +5,5 @@ export {default as LatestNews} from "./LatestNews";
 export {default as LatestBlogs} from "./LatestBlogs";
 export {default as LatestReports} from "./LatestReports";
 export {default as AppCard} from "./cards/AppCard";
+export {default as Loading} from "./Loading";
+export {default as CustomPaginate} from "./CustomPaginate";
