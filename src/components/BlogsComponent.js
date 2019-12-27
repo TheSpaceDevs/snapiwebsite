@@ -4,10 +4,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {ReportsCard, Loading, CustomPaginate} from "../components";
+import {LoadingComponent, NewsCard, PaginateComponent} from "../components";
 import {ColStyle} from "../styles";
 
-function LatestReports() {
+function BlogsComponent() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [page, setPage] = useState(0);
@@ -20,7 +20,7 @@ function LatestReports() {
   const getData = async () => {
     try {
       const results = await axios.get(
-        `https://spaceflightnewsapi.net/api/v1/reports?limit=6&page=${page}`
+        `https://spaceflightnewsapi.net/api/v1/blogs?limit=21&page=${page}`
       );
       setData(results.data);
       setLoading(false)
@@ -32,24 +32,24 @@ function LatestReports() {
   return (
     <Container>
       <Row className="mt-2 justify-content-center">
-        <h1 className="font-weight-bold">Reports</h1>
+        <h1 className="font-weight-bold">Blogs</h1>
       </Row>
       <Row>
         {loading
           ?
-          <Loading/>
+          <LoadingComponent/>
           :
           <div>
             <Row>
               {data.docs.map(article => {
                 return (
-                  <Col xl={4} lg={4} sm={6} key={article._id} style={ColStyle}>
-                    <ReportsCard
+                  <Col style={ColStyle} xl={4} lg={4} sm={6} key={article._id}>
+                    <NewsCard
                       title={article.title}
                       site={article.news_site_long}
                       url={article.url}
                       date={article.published_date}
-                      summary={article.summary}
+                      image={article.featured_image}
                     />
                   </Col>
                 );
@@ -57,7 +57,7 @@ function LatestReports() {
             </Row>
             <Row>
               <Col>
-                <CustomPaginate
+                <PaginateComponent
                   totalPages={data.totalPages}
                   setPage={setPage}
                 />
@@ -67,8 +67,7 @@ function LatestReports() {
         }
       </Row>
     </Container>
-  )
+  );
 }
 
-
-export default LatestReports;
+export default BlogsComponent;

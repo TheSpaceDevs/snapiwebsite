@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import {News, Apps, Blogs, Reports, Info} from "./screens";
-import { Header } from "./components";
+import {News, Apps, Blogs, Reports, Info, Home} from "./screens";
+import { HeaderComponent } from "./components";
 
 export default function App() {
   return (
     <Router>
-      <Header />
+      <HeaderComponent />
       <Switch>
         <Route path="/info">
           <Info />
@@ -21,8 +21,11 @@ export default function App() {
         <Route path="/apps">
           <Apps />
         </Route>
-        <Route path="/">
+        <Route path="/news">
           <News />
+        </Route>
+        <Route path="/">
+          <Home />
         </Route>
       </Switch>
     </Router>

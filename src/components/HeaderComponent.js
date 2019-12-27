@@ -7,7 +7,7 @@ import axios from 'axios';
 import Button from "react-bootstrap/Button";
 import Badge from "react-bootstrap/Badge";
 
-export default function Header() {
+export default function HeaderComponent() {
   const [version, setVersion] = useState('');
   const {pathname} = useLocation();
 
@@ -26,7 +26,7 @@ export default function Header() {
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
-          <Nav.Link as={Link} active={pathname === "/"} to="/">News</Nav.Link>
+          <Nav.Link as={Link} active={pathname === "/news"} to="/news">News</Nav.Link>
           <Nav.Link as={Link} active={pathname === "/blogs"} to="/blogs">Blogs</Nav.Link>
           <Nav.Link as={Link} active={pathname === "/reports"} to="/reports">Reports</Nav.Link>
           <Nav.Link as={Link} active={pathname === "/apps"} to="/apps">Apps</Nav.Link>
