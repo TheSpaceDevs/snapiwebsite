@@ -1,11 +1,11 @@
 {
   "name": "snapiwebsite",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
-    "firebase": "^7.6.0",
+    "firebase": "^7.6.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
@@ -17,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "tar -cvf ./deploy.tar --exclude='*.map' ./captain-definition ./build/* && caprover deploy -t ./deploy.tar"
   },
   "eslintConfig": {
     "extends": "react-app"
