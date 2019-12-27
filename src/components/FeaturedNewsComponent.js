@@ -23,27 +23,25 @@ const FeaturedNewsComponent = props => {
 
   return (
     <Container>
-      <Row>
+      <Row className="mt-2 justify-content-center">
+        <h1 className="font-weight-bold">Featured</h1>
         {loading
           ?
           <LoadingComponent/>
           :
-          <Row className="mt-2 justify-content-center" >
-            <h1 className="font-weight-bold">Featured</h1>
-            <Row>
-              {featured.map(article => {
-                return (
-                  <Col key={article._id} className="p-1" sm={12} md={4} >
-                    <FeaturedCard
-                      title={article.title}
-                      image_url={article.featured_image}
-                      news_site={article.news_site_long}
-                      url={article.url}
-                    />
-                  </Col>
-                )
-              })}
-            </Row>
+          <Row>
+            {featured.map(article => {
+              return (
+                <Col key={article._id} className="p-1" sm={12} md={4} >
+                  <FeaturedCard
+                    title={article.title}
+                    image_url={article.featured_image}
+                    news_site={article.news_site_long}
+                    url={article.url}
+                  />
+                </Col>
+              )
+            })}
           </Row>
         }
       </Row>
