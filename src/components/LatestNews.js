@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
@@ -31,15 +30,16 @@ function LatestNews() {
 
   if (loading) {
     return (
-      <Container>
+      <>
         <Row>
           <Loading/>
         </Row>
-      </Container>
+      </>
     )
   } else {
     return (
-      <Container>
+      <Row className="justify-content-center">
+        <h1 className="font-weight-bold">Latest News</h1>
         <Row>
           {data.docs.map(article => {
             return (
@@ -63,7 +63,7 @@ function LatestNews() {
             />
           </Col>
         </Row>
-      </Container>
+      </Row>
     );
   }
 }

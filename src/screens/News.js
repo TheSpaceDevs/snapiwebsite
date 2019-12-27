@@ -1,9 +1,16 @@
 import React from "react";
+import Container from "react-bootstrap/Container";
 
-import { LatestNews } from "../components";
+import { LatestNews, FeaturedNews } from "../components";
 
 function News(props) {
-  return <LatestNews />;
+  return (
+    <Container>
+      <FeaturedNews/>
+      <hr />
+      <LatestNews />
+    </Container>
+  )
 }
 
 export default News;
