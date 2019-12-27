@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 
 const FeatutredCard = ({title, image_url, news_site, url}) => {
   return (

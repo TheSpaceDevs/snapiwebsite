@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {NewsCard, Loading, CustomPaginate, FeaturedNews} from "../components";
+import {NewsCard, Loading, CustomPaginate} from "../components";
 import {ColStyle} from "../styles";
 
 function LatestNews() {
