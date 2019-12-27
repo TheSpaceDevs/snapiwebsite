@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactPaginate from "react-paginate";
 
-const CustomPaginate = ({totalPages, setPage}) => {
+const PaginateComponent = ({totalPages, setPage}) => {
   return (
     <ReactPaginate
-      containerClassName="pagination justify-content-center"
+      containerClassName="pagination justify-content-center mb-3 mt-3"
       disabledClassName="disabled"
       pageClassName="page-item"
       pageLinkClassName="page-link"
@@ -17,7 +17,7 @@ const CustomPaginate = ({totalPages, setPage}) => {
       breakClassName="break-me"
       breakLinkClassName="page-link"
       pageCount={totalPages}
-      pageRangeDisplayed={10}
+      pageRangeDisplayed={4}
       onPageChange={({selected}) => {
         setPage(selected + 1)
       }}
@@ -26,4 +26,4 @@ const CustomPaginate = ({totalPages, setPage}) => {
   );
 };
 
-export default CustomPaginate;
+export default PaginateComponent;

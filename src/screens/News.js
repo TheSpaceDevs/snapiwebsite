@@ -1,9 +1,11 @@
 import React from "react";
 
-import { LatestNews } from "../components";
+import { NewsComponent } from "../components";
 
 function News(props) {
-  return <LatestNews />;
+  return (
+    <NewsComponent />
+  )
 }
 
 export default News;
