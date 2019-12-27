@@ -3,7 +3,7 @@ import axios from "axios";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import {NewsCard, Loading, CustomPaginate, AppCard} from "../components";
+import {NewsCard, Loading, CustomPaginate} from "../components";
 import {ColStyle} from "../styles";
 import Container from "react-bootstrap/Container";
 
