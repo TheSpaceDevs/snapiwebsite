@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 
 import { NewsComponent } from "../components";
 
