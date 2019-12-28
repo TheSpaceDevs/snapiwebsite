@@ -33,7 +33,12 @@ export default function HeaderComponent() {
           <Nav.Link as={Link} to="/about">About</Nav.Link>
         </Nav>
         <Nav>
-          <Button variant="primary">
+          <Button
+            variant="primary"
+            onClick={() => {
+              window.open('https://github.com/spaceflightnewsapi/spaceflightnewsapi/blob/master/README.md#changelog', '_blank noopener noreferrer')
+            }}
+          >
             API Version <Badge variant="light">{version}</Badge>
             <span className="sr-only">unread messages</span>
           </Button>

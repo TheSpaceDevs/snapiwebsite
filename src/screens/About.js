@@ -20,7 +20,8 @@ const About = () => {
           </p>
           <h2>Space Launch Now - Go4Liftoff</h2>
           <p>
-            As a fan of the <a href="#">Space Launch Now</a> (SLN) app for tracking launches and looking for testers,
+            As a fan of the <a href="https://spacelaunchnow.me/">Space Launch Now</a> (SLN) app for tracking launches
+            and looking for testers,
             Derk turned to the
             developer of SLN; Caleb Jones.
             <br/>
@@ -31,20 +32,9 @@ const About = () => {
             Space Launch Now app.
             <br/><br/>
             Being a great contributor to the Space Launch Now community, and developer of the <a
-            href="#">Go4Liftoff</a> app, Jacques Rascagneres also added the SNAPI to his app. Receiving great feedback, Jacques helped improving the API as
+            href="https://go4liftoff.com/">Go4Liftoff</a> app, Jacques Rascagneres also added the SNAPI to his app.
+            Receiving great feedback, Jacques helped improving the API as
             well.
-          </p>
-          <h2>The start and end of the Spaceflight News App</h2>
-          <p>
-            Now that the API was up-and-running, Derk began developing the Spaceflight News app for both iOS and Android.
-            The app was revised 3 times before it was released in the app stores in the summer of 2019. Being alone in
-            development, Derk learned a couple of things:
-            <ul>
-              <li>Developing apps is something he really likes doing</li>
-              <li>Developing an app costs more time than one thinks</li>
-            </ul>
-            Since there were quite some apps already doing the same (and even better), Derk retired the app to focus on
-            the SNAPI, ideas for new apps and other projects.
           </p>
         </Col>
       </Row>
