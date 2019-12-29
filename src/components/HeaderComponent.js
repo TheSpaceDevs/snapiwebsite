@@ -30,10 +30,15 @@ export default function HeaderComponent() {
           <Nav.Link as={Link} active={pathname === "/blogs"} to="/blogs">Blogs</Nav.Link>
           <Nav.Link as={Link} active={pathname === "/reports"} to="/reports">Reports</Nav.Link>
           <Nav.Link as={Link} active={pathname === "/apps"} to="/apps">Apps</Nav.Link>
-          {/*<Nav.Link as={Link} to="/info">Info</Nav.Link>*/}
+          <Nav.Link as={Link} to="/about">About</Nav.Link>
         </Nav>
         <Nav>
-          <Button variant="primary">
+          <Button
+            variant="primary"
+            onClick={() => {
+              window.open('https://github.com/spaceflightnewsapi/spaceflightnewsapi/blob/master/README.md#changelog', '_blank noopener noreferrer')
+            }}
+          >
             API Version <Badge variant="light">{version}</Badge>
             <span className="sr-only">unread messages</span>
           </Button>

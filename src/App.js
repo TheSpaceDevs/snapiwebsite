@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-import {News, Apps, Blogs, Reports, Info, Home} from "./screens";
+import {News, Apps, Blogs, Reports, About, Home} from "./screens";
 import { HeaderComponent } from "./components";
 
 export default function App() {
@@ -9,8 +9,8 @@ export default function App() {
     <Router>
       <HeaderComponent />
       <Switch>
-        <Route path="/info">
-          <Info />
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/reports">
           <Reports />
