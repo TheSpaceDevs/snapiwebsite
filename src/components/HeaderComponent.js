@@ -44,7 +44,7 @@ export default function HeaderComponent() {
           </Button>
           <Nav.Link active href="https://spaceflightnewsapi.net/api/v1/" target='_blank noopener noreferrer' >API Docs</Nav.Link>
           <NavDropdown active title="Connect" id="basic-nav-dropdown">
-            <NavDropdown.Item href="https://discord.gg/AmfkJdA" target='_blank noopener noreferrer'>Discord</NavDropdown.Item>
+            <NavDropdown.Item href="https://discord.gg/PhvsBHP" target='_blank noopener noreferrer'>Discord</NavDropdown.Item>
             <NavDropdown.Item href="https://www.reddit.com/r/snapi/" target='_blank noopener noreferrer'>Reddit</NavDropdown.Item>
             <NavDropdown.Item href="https://twitter.com/the_snapi" target='_blank noopener noreferrer'>Twitter</NavDropdown.Item>
           </NavDropdown>
