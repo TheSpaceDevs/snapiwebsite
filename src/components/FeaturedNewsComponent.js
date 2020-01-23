@@ -1,11 +1,10 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 import FeaturedCard from "./cards/FeaturedCard";
-import Container from "react-bootstrap/Container";
-import {LoadingComponent} from "./index";
+import { LoadingComponent } from "./index";
 
 const FeaturedNewsComponent = props => {
   const [featured, setFeatured] = useState([]);
@@ -22,30 +21,28 @@ const FeaturedNewsComponent = props => {
   };
 
   return (
-    <Container>
-      <Row className="mt-2 justify-content-center">
-        <h1 className="font-weight-bold">Featured</h1>
-        {loading
-          ?
-          <LoadingComponent/>
-          :
-          <Row>
-            {featured.map(article => {
-              return (
-                <Col key={article._id} className="p-1" sm={12} md={4} >
-                  <FeaturedCard
-                    title={article.title}
-                    image_url={article.featured_image}
-                    news_site={article.news_site_long}
-                    url={article.url}
-                  />
-                </Col>
-              )
-            })}
-          </Row>
-        }
-      </Row>
-    </Container>
+    <Row className="mt-2 justify-content-center">
+      <h1 className="font-weight-bold">Featured</h1>
+      {loading
+        ?
+        <LoadingComponent />
+        :
+        <Row>
+          {featured.map(article => {
+            return (
+              <Col key={article._id} className="p-1" sm={12} md={4} >
+                <FeaturedCard
+                  title={article.title}
+                  image_url={article.featured_image}
+                  news_site={article.news_site_long}
+                  url={article.url}
+                />
+              </Col>
+            )
+          })}
+        </Row>
+      }
+    </Row>
   )
 };
 
