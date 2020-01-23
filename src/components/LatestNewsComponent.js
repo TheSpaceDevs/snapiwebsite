@@ -5,7 +5,6 @@ import Col from 'react-bootstrap/Col';
 
 import {NewsCard, LoadingComponent} from "../components";
 import {ColStyle} from "../styles";
-import Container from "react-bootstrap/Container";
 
 function LatestNewsComponent() {
   const [data, setData] = useState([]);
@@ -29,7 +28,7 @@ function LatestNewsComponent() {
   };
 
   return (
-    <Container>
+    <>
       <Row className="mt-2 justify-content-center">
         <h1 className="font-weight-bold">Latest News</h1>
       </Row>
@@ -55,7 +54,7 @@ function LatestNewsComponent() {
           </Row>
         }
       </Row>
-    </Container>
+    </>
   )
 }
 
