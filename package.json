@@ -1,6 +1,6 @@
 {
   "name": "snapiwebsite",
-  "version": "2.5.0",
+  "version": "2.7.0",
   "private": true,
   "dependencies": {
     "axios": "^0.19.2",
