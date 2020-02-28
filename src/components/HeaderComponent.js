@@ -47,6 +47,7 @@ export default function HeaderComponent() {
             <NavDropdown.Item href="https://discord.gg/PhvsBHP" target='_blank noopener noreferrer'>Discord</NavDropdown.Item>
             <NavDropdown.Item href="https://www.reddit.com/r/snapi/" target='_blank noopener noreferrer'>Reddit</NavDropdown.Item>
             <NavDropdown.Item href="https://twitter.com/the_snapi" target='_blank noopener noreferrer'>Twitter</NavDropdown.Item>
+            <NavDropdown.Item href="https://github.com/spaceflightnewsapi" target='_blank noopener noreferrer'>GitHub</NavDropdown.Item>
           </NavDropdown>
           <Nav.Link active href="https://discordapp.com/oauth2/authorize?client_id=598493983886540800&scope=bot&permissions=2048" target='_blank noopener noreferrer' >Discord Bot</Nav.Link>
           <Nav.Link active href="https://www.patreon.com/bePatron?u=8565105" target='_blank noopener noreferrer' >Patreon</Nav.Link>
