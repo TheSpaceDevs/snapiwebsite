@@ -12,7 +12,7 @@ module.exports = {
       title: 'Spaceflight News API',
       logo: {
         alt: 'SNAPI Logo',
-        src: 'img/logo.svg',
+        src: 'img/SNAPI_logo.png',
       },
       items: [
         {
