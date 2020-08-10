@@ -7,6 +7,7 @@ import styles from './styles.module.css';
 
 const News = () => {
   const [news, setNews] = useState([]);
+  const [loading, setLoading] = useState(true)
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 
@@ -17,6 +18,7 @@ const News = () => {
   const fetchData = async () => {
     const newsResult = await axios.get('http://localhost:1337/articles')
     setNews(newsResult.data)
+    setLoading(false)
   }
 
   const News = () => {
@@ -51,7 +53,7 @@ const News = () => {
     <Layout>
       <div className="container">
         <div className="row">
-          <News />
+          {loading ? null : <News />}
         </div>
       </div>
     </Layout>
