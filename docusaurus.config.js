@@ -37,7 +37,7 @@ module.exports = {
           to: 'https://thespacedevs.com',
           activeBasePath: 'thespacedevs',
           label: 'The Space Devs',
-          position: 'left',
+          position: 'right',
         },
         {
           href: 'https://github.com/spaceflightnewsapi/spaceflightnewsapi',
