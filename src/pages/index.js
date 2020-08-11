@@ -9,64 +9,46 @@ import styles from './styles.module.css';
 const features = [
   {
     title: <>News</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    imageUrl: 'img/News.svg',
     description: (
       <>
-        The latest Spaceflight related news, for you and your users
+        Get an overview of the latest Spaceflight news, from various sources! Easily link your users to the right websites
       </>
     ),
   },
   {
     title: <>Blogs</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    imageUrl: 'img/Blogs.svg',
     description: (
       <>
-        Blogs for more detailed coverage
+        Blogs often provide a more detailed overview of launches and missions. A must-have for the serious spaceflight enthusiast
       </>
     ),
   },
   {
     title: <>Reports</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/Reports.svg',
     description: (
       <>
-        Space Station and Mission reports to keep up-to-date with ongoing missions
+        Space stations and other missions often publish their data. With SNAPI, you can include it in your app as well!
       </>
     ),
   },
   {
     title: <>Launch Library 2 Integration</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/LL2.svg',
     description: (
       <>
-        Integration with LL2 so you can get related news with launches
+        Already using Launch Library 2 to get launches and events? Awesome! SNAPI offers integration so you can build relations between news and launches/events
       </>
     ),
-  },
-  {
-    title: <>Images</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Yet to come - Beautiful images from various sources
-      </>
-    ),
-  },
-  {
-    title: <>Videos</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Yet to come - Awesome videos from various sources
-      </>
-    ),
-  },
+  }
 ];
 
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx('col col--6', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -83,8 +65,8 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="🚀"
+      description="The Spaceflight News API lets you add space related news to your apps.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
