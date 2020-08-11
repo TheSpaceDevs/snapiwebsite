@@ -36,7 +36,6 @@
   width: 200px;
 }
 
-.cardContainer {
-  max-width: 320px;
-  height: 100%;
+.appCol {
+  margin-top: 1rem;
 }

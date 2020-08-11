@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: <>News</>,
-    imageUrl: 'img/News.svg',
+    imageUrl: 'img/features/News.svg',
     description: (
       <>
         Get an overview of the latest Spaceflight news, from various sources! Easily link your users to the right websites
@@ -18,7 +18,7 @@ const features = [
   },
   {
     title: <>Blogs</>,
-    imageUrl: 'img/Blogs.svg',
+    imageUrl: 'img/features/Blogs.svg',
     description: (
       <>
         Blogs often provide a more detailed overview of launches and missions. A must-have for the serious spaceflight enthusiast
@@ -27,7 +27,7 @@ const features = [
   },
   {
     title: <>Reports</>,
-    imageUrl: 'img/Reports.svg',
+    imageUrl: 'img/features/Reports.svg',
     description: (
       <>
         Space stations and other missions often publish their data. With SNAPI, you can include it in your app as well!
@@ -36,7 +36,7 @@ const features = [
   },
   {
     title: <>Launch Library 2 Integration</>,
-    imageUrl: 'img/LL2.svg',
+    imageUrl: 'img/features/LL2.svg',
     description: (
       <>
         Already using Launch Library 2 to get launches and events? Awesome! SNAPI offers integration so you can build relations between news and launches/events

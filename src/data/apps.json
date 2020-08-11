@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Space Launch Now",
+    "image": "https://spacelaunchnow-prod-east.nyc3.cdn.digitaloceanspaces.com/static/home/img/launcher.png",
+    "website": "https://spacelaunchnow.me/",
+    "platforms": [
+      "Android",
+      "iOS",
+      "Web"
+    ]
+  },
+  {
+    "name": "Go4Liftoff",
+    "image": "https://thespacedevs.com/static/images/g4l_logo.png",
+    "website": "https://go4liftoff.com/",
+    "platforms": [
+      "Android",
+      "Web"
+    ]
+  },
+  {
+    "name": "Space Union",
+    "image": "https://lh3.googleusercontent.com/EWHqm77aJBlHehFh6Qd4zySleBHD3uQHUH4MmOBUIbAtgs5yLG8TFDvsQODq7eA7Wg=s360",
+    "website": "https://play.google.com/store/apps/details?id=space.lazz.spaceunion&hl=en_US",
+    "platforms": [
+      "Android"
+    ]
+  },
+  {
+    "name": "Moonwalk",
+    "image": "https://is3-ssl.mzstatic.com/image/thumb/Purple113/v4/3b/c5/5c/3bc55c1f-2e1b-019b-90cb-b73ec41e1a2c/AppIcon-1x_U007emarketing-0-10-0-0-85-220.png/246x0w.png",
+    "website": "https://github.com/Illu/moonwalk",
+    "platforms": [
+      "iOS"
+    ]
+  }
+]
