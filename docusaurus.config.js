@@ -16,21 +16,15 @@ module.exports = {
       },
       items: [
         {
-          to: 'news/',
-          activeBasePath: 'news',
-          label: 'News',
-          position: 'left',
-        },
-        {
-          to: 'apps/',
-          activeBasePath: 'apps',
-          label: 'Apps',
-          position: 'left',
-        },
-        {
           to: 'https://www.spaceflightnewsapi.net/documentation',
           activeBasePath: 'docs',
           label: 'Documentation',
+          position: 'left',
+        },
+        {
+          to: 'showcase/',
+          activeBasePath: 'showcase',
+          label: 'Showcase',
           position: 'left',
         },
         {
