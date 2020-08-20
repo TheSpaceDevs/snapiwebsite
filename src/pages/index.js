@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+const url = `https://${process.env.NODE_ENV === 'production' ? 'www' : 'test'}.spaceflightnewsapi.net`
+
 const features = [
   {
     title: <>News</>,
@@ -77,7 +79,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('https://www.spaceflightnewsapi.net/documentation')}>
+              to={useBaseUrl(`${url}/documentation`)}>
               Get Started
             </Link>
           </div>
