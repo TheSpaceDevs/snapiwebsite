@@ -13,7 +13,7 @@ const Showcase = () => {
     return apps.map(app => {
       return (
         <div key={app.name} className={clsx("col col--3", styles.appCol)}>
-          <div className="card">
+          <div className={clsx("card", styles.appCard)}>
             <div className="card__header">
               <div className="avatar">
                 <img
