@@ -42,7 +42,9 @@ const Showcase = () => {
   }
 
   return (
-    <Layout>
+    <Layout
+      title="Showcase"
+      description="These apps and services are using the Spaceflight News API">
       <div className="container">
         <div className="row">
           <Apps/>

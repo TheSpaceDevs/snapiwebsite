@@ -1,6 +1,6 @@
 module.exports = {
   title: 'Spaceflight News API',
-  tagline: 'Spaceflight related news for your apps',
+  tagline: 'The Most Complete Spaceflight Related News API 🚀',
   url: 'https://www.spaceflightnewsapi.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -63,6 +63,10 @@ module.exports = {
               label: 'Twitter',
               href: 'https://twitter.com/the_snapi',
             },
+            {
+              label: 'Reddit',
+              href: 'https://www.reddit.com/r/snapi/',
+            },
           ],
         },
         {
@@ -71,6 +75,14 @@ module.exports = {
             {
               label: 'GitHub',
               href: 'https://github.com/spaceflightnewsapi/spaceflightnewsapi',
+            },
+            {
+              label: 'The Space Devs',
+              href: 'https://thespacedevs.com/',
+            },
+            {
+              label: 'JetBrains Sponsored',
+              href: 'https://www.jetbrains.com/?from=SpaceflightNewsAPI',
             },
           ],
         },

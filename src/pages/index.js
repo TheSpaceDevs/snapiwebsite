@@ -65,7 +65,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title="🚀"
+      title="Home"
       description="The Spaceflight News API lets you add space related news to your apps.">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
