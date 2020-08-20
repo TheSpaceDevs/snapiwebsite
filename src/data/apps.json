@@ -33,5 +33,29 @@
     "platforms": [
       "iOS"
     ]
+  },
+  {
+    "name": "Exos",
+    "image": "https://is3-ssl.mzstatic.com/image/thumb/Purple114/v4/8a/de/77/8ade7777-a8a5-e7c3-d10f-2ae3f296a37d/AppIcon-1x_U007emarketing-0-5-85-220.png/246x0w.png",
+    "website": "https://apps.apple.com/nl/app/exos-aerospace/id1517168924",
+    "platforms": [
+      "iOS"
+    ]
+  },
+  {
+    "name": "XLaunch",
+    "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple114/v4/7e/ef/3f/7eef3ff7-cb41-0d6b-8132-bae2df1806a5/AppIcon-0-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.png",
+    "website": "https://xlaunchapp.carrd.co/",
+    "platforms": [
+      "iOS"
+    ]
+  },
+  {
+    "name": "Spacetime: Rocket Launch Times",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/4a/12/b0/4a12b0d9-d236-2a11-1caf-6ae541c6fccf/AppIcon-1x_U007emarketing-0-7-0-sRGB-85-220.png/246x0w.png",
+    "website": "https://spacetimekit.com/",
+    "platforms": [
+      "iOS"
+    ]
   }
 ]
