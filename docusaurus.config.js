@@ -1,9 +1,8 @@
-const url = `https://${process.env.NODE_ENV === 'production' ? 'www' : 'test'}.spaceflightnewsapi.net`
 
 module.exports = {
   title: 'Spaceflight News API',
   tagline: 'The Most Complete Spaceflight Related News API 🚀',
-  url: url,
+  url: 'https://test.spaceflightnewsapi.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -18,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          to: `${url}/documentation`,
+          to: `https://test.spaceflightnewsapi.net/documentation`,
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
@@ -50,7 +49,7 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: `${url}/documentation`,
+              to: `https://test.spaceflightnewsapi.net/documentation`,
             },
           ],
         },

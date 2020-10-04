@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const url = `https://${process.env.NODE_ENV === 'production' ? 'www' : 'test'}.spaceflightnewsapi.net`
+const url = `https://test.spaceflightnewsapi.net`
 
 const features = [
   {
