@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Spaceflight News API',
   tagline: 'The Most Complete Spaceflight Related News API 🚀',
-  url: 'https://test.spaceflightnewsapi.net',
+  url: 'https://www.spaceflightnewsapi.net',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -17,7 +17,7 @@ module.exports = {
       },
       items: [
         {
-          to: `https://test.spaceflightnewsapi.net/documentation`,
+          to: `https://www.spaceflightnewsapi.net/documentation`,
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
@@ -49,7 +49,7 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: `https://test.spaceflightnewsapi.net/documentation`,
+              to: `https://www.spaceflightnewsapi.net/documentation`,
             },
           ],
         },

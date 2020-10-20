@@ -6,7 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const url = `https://test.spaceflightnewsapi.net`
+const url = `https://www.spaceflightnewsapi.net`
 
 const features = [
   {
