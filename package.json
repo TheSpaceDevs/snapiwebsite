@@ -1,30 +1,23 @@
 {
   "name": "snapiwebsite",
-  "version": "2.9.0",
+  "version": "3.0.0",
   "private": true,
-  "dependencies": {
-    "axios": "^0.19.2",
-    "bootstrap": "^4.4.1",
-    "firebase": "^7.9.2",
-    "react": "^16.13.0",
-    "react-adsense": "^0.1.0",
-    "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.13.0",
-    "react-helmet": "^5.2.1",
-    "react-paginate": "^6.3.2",
-    "react-router-dom": "^5.1.2",
-    "react-router-sitemap": "^1.2.0",
-    "react-scripts": "3.4.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "sitemap": "babel-node sitemap-builder.js"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build && cp -R build/* ../spaceflightnewsapi/public/",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.66",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
+    "@mdx-js/react": "^1.6.18",
+    "axios": "^0.20.0",
+    "clsx": "^1.1.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
   },
   "browserslist": {
     "production": [
@@ -37,12 +30,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
-    "reactotron-react-js": "^3.3.7"
   }
 }
