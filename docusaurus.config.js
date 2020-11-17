@@ -1,4 +1,3 @@
-
 module.exports = {
   title: 'Spaceflight News API',
   tagline: 'The Most Complete Spaceflight Related News API 🚀',
@@ -9,6 +8,15 @@ module.exports = {
   organizationName: 'spaceflightnewsapi', // Usually your GitHub org/user name.
   projectName: 'spaceflightnewsapi', // Usually your repo name.
   themeConfig: {
+    image: 'img/SNAPI2.png',
+    announcementBar: {
+      id: 'support_us', // Any value that will identify this message.
+      content:
+          'Keep the servers going! Consider <a target="_blank" rel="noopener noreferrer" href="https://www.patreon.com/bePatron?u=32219121">becoming a TSD Patron</a>',
+      backgroundColor: '#fafbfc', // Defaults to `#fff`.
+      textColor: '#091E42', // Defaults to `#000`.
+      isCloseable: false, // Defaults to `true`.
+    },
     navbar: {
       title: 'Spaceflight News API',
       logo: {
@@ -18,7 +26,6 @@ module.exports = {
       items: [
         {
           to: `https://www.spaceflightnewsapi.net/documentation`,
-          activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
         },
@@ -30,8 +37,12 @@ module.exports = {
         },
         {
           to: 'https://thespacedevs.com',
-          activeBasePath: 'thespacedevs',
           label: 'The Space Devs',
+          position: 'right',
+        },
+        {
+          to: 'https://discord.gg/p7ntkNA',
+          label: 'Discord',
           position: 'right',
         },
         {
