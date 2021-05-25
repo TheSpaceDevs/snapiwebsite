@@ -79,7 +79,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl(`${url}/documentation`)}>
+              to='https://api.spaceflightnewsapi.net/v3/documentation'>
               Get Started
             </Link>
           </div>
