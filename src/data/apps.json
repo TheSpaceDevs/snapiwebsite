@@ -61,9 +61,10 @@
   {
     "name": "Nextlaunch",
     "image": "https://media.discordapp.net/attachments/762559078719291403/846766115236347933/Icon-red.jpg",
-    "website": "https://nextlaunch.org/",
+    "website": "https://github.com/Nextlaunch/CLI",
     "platforms": [
-      "Discord"
+      "Discord",
+      "CLI"
     ]
   }
 ]
