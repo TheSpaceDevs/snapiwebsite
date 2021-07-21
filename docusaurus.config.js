@@ -8,7 +8,7 @@ module.exports = {
   organizationName: 'spaceflightnewsapi', // Usually your GitHub org/user name.
   projectName: 'spaceflightnewsapi', // Usually your repo name.
   themeConfig: {
-    image: 'img/SNAPI2.png',
+    image: 'img/SNAPI.png',
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
