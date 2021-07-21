@@ -76,5 +76,13 @@
     "platforms": [
       "Android"
     ]
+  },
+  {
+    "name": "T-Minus",
+    "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple115/v4/34/3a/1b/343a1bfb-7059-3d25-27e0-af78ff375899/AppIcon-1x_U007emarketing-0-7-0-85-220.png/246x0w.png",
+    "website": "https://t-minus.space/",
+    "platforms": [
+      "iOS"
+    ]
   }
 ]
