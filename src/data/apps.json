@@ -6,7 +6,8 @@
     "platforms": [
       "Android",
       "iOS",
-      "Web"
+      "Web",
+      "Discord"
     ]
   },
   {
@@ -15,7 +16,8 @@
     "website": "https://go4liftoff.com/",
     "platforms": [
       "Android",
-      "Web"
+      "Web",
+      "Discord"
     ]
   },
   {
@@ -65,6 +67,14 @@
     "platforms": [
       "Discord",
       "CLI"
+    ]
+  },
+  {
+    "name": "Space Dawn",
+    "image": "https://play-lh.googleusercontent.com/Z5uZ_gbwkUjepYUcRbmdJWN8cLhfnq2dcTT0E2xjVBjpGNDSE4rCyzTie2wkOELNYg=s180-rw",
+    "website": "https://play.google.com/store/apps/details?id=com.raghav.spacedawn",
+    "platforms": [
+      "Android"
     ]
   }
 ]
