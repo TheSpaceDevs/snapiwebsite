@@ -84,5 +84,13 @@
     "platforms": [
       "iOS"
     ]
+  },
+  {
+    "name": "Rocket Launches Today",
+    "image": "https://rocketlaunchestoday.xyz/static/media/RLT.png",
+    "website": "https://rocketlaunchestoday.xyz/",
+    "platforms": [
+      "Web"
+    ]
   }
 ]
