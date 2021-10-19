@@ -92,5 +92,13 @@
     "platforms": [
       "Web"
     ]
+  },
+  {
+    "name": "Shuttle",
+    "image": "https://shuttle-lyart.vercel.app/static/media/Shuttle.ae0dd626.png",
+    "website": "https://shuttle-lyart.vercel.app",
+    "platforms": [
+      "Web"
+    ]
   }
 ]
