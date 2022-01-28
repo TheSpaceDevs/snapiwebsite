@@ -12,7 +12,7 @@ module.exports = {
     announcementBar: {
       id: 'support_us', // Any value that will identify this message.
       content:
-          'Keep the servers going! Consider <a target="_blank" rel="noopener noreferrer" href="https://www.patreon.com/bePatron?u=32219121">becoming a TSD Patron</a>',
+          'Keep the servers going! Consider <a target="_blank" rel="noopener noreferrer" href="https://www.patreon.com/bePatron?u=32219121">becoming a TSD Patron</a> or <a target="_blank" rel="noopener noreferrer" href="https://ko-fi.com/derkweijers">give a one-time donation!</a>',
       backgroundColor: '#fafbfc', // Defaults to `#fff`.
       textColor: '#091E42', // Defaults to `#000`.
       isCloseable: false, // Defaults to `true`.
