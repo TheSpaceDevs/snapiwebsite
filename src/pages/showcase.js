@@ -46,7 +46,7 @@ const Showcase = () => {
       title="Showcase"
       description="These apps and services are using the Spaceflight News API">
       <div className="container">
-        <div className="row">
+        <div className="row" style={{marginBottom: "2rem"}}>
           <Apps/>
         </div>
       </div>
