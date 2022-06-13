@@ -5,7 +5,7 @@ import clsx from 'clsx';
 import styles from './styles.module.css'
 import apps from '../data/apps.json'
 
-const Showcase = () => {
+const Users = () => {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
 
@@ -43,7 +43,7 @@ const Showcase = () => {
 
   return (
     <Layout
-      title="Showcase"
+      title="Users"
       description="These apps and services are using the Spaceflight News API">
       <div className="container">
         <div className="row" style={{marginBottom: "2rem"}}>
@@ -54,4 +54,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
+export default Users;

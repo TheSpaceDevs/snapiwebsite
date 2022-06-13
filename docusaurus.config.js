@@ -30,9 +30,9 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'showcase/',
-          activeBasePath: 'showcase',
-          label: 'Showcase',
+          to: 'users/',
+          activeBasePath: 'users',
+          label: 'Users',
           position: 'left',
         },
         {
