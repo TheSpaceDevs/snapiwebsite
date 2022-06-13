@@ -124,5 +124,31 @@
     "platforms": [
       "Web"
     ]
+  },
+  {
+    "name": "Rocket Downrange",
+    "image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/tsd-web/rocket2520down_image_20210201161945.jpg",
+    "website": "https://rocketdownrange.com/",
+    "platforms": [
+      "Web"
+    ]
+  },
+  {
+    "name": "Rock It!",
+    "image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/tsd-web/rock2520it252_image_20211225103303.png",
+    "website": "https://rockit.010.one/",
+    "platforms": [
+      "Web"
+    ]
+  },
+  {
+    "name": "Space Launch Schedule",
+    "image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/tsd-web/space2520launc_image_20210201080531.png",
+    "website": "https://www.spacelaunchschedule.com/",
+    "platforms": [
+      "Web",
+      "iOS",
+      "Android"
+    ]
   }
 ]
