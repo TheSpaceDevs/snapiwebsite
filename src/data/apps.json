@@ -116,5 +116,13 @@
     "platforms": [
       "Web"
     ]
+  },
+  {
+    "name": "ISS Daily Reports",
+    "image": "https://spacelaunchnow-prod-east.nyc3.digitaloceanspaces.com/media/tsd-web/iss2520daily2_image_20220601184525.png",
+    "website": "https://sage-smakager-bccb8d.netlify.app/",
+    "platforms": [
+      "Web"
+    ]
   }
 ]
