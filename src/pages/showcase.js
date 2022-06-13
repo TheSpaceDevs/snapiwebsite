@@ -33,7 +33,7 @@ const Showcase = () => {
               </div>
             </div>
             <div className="card__footer">
-                <a href={app.website} className="button button--secondary">Website</a>
+                <a href={app.website} target="_blank" className="button button--secondary">Website</a>
             </div>
           </div>
         </div>
