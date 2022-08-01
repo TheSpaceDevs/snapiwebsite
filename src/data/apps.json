@@ -150,5 +150,13 @@
       "iOS",
       "Android"
     ]
+  },
+  {
+    "name": "BlackBird",
+    "image": "https://is5-ssl.mzstatic.com/image/thumb/Purple112/v4/bf/28/d9/bf28d914-4951-bc89-6fe5-2cdcef6db977/AppIcon-0-1x_U007emarketing-0-5-0-85-220.png/230x0w.webp",
+    "website": "https://apps.apple.com/us/app/blackbird-launch-tracker/id1634192301",
+    "platforms": [
+      "iOS"
+    ]
   }
 ]
