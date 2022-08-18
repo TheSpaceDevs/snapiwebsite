@@ -60,7 +60,7 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: `https://api.spaceflightnewsapi.net/v3/documentation`,
+              to: `https://api.spaceflightnewsapi.net/documentation`,
             },
           ],
         },
