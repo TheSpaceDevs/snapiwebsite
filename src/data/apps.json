@@ -158,5 +158,14 @@
     "platforms": [
       "iOS"
     ]
+  },
+  {
+    "name": "HENRYS",
+    "image": "https://cdn.discordapp.com/attachments/762559078719291403/1032629770481057882/HYS_280_280_Blue.png",
+    "website": "https://www.henrys.space/",
+    "platforms": [
+      "Web",
+      "Discord"
+    ]
   }
 ]
