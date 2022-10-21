@@ -167,5 +167,14 @@
       "Web",
       "Discord"
     ]
+  },
+  {
+    "name": "BSN - Space News",
+    "image": "https://cdn.discordapp.com/attachments/762559078719291403/1032901082428481576/cachedImage.png",
+    "website": "https://apps.apple.com/app/bsn-space-news/id6443723195",
+    "platforms": [
+      "Android",
+      "iOS"
+    ]
   }
 ]
