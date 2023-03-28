@@ -6,7 +6,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const url = `https://www.spaceflightnewsapi.net`
 
 const features = [
   {
@@ -79,7 +78,7 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to='https://api.spaceflightnewsapi.net/documentation'>
+              to='https://api.spaceflightnewsapi.net/v4/documentation'>
               Get Started
             </Link>
           </div>

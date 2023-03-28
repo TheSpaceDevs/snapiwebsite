@@ -25,8 +25,13 @@ module.exports = {
       },
       items: [
         {
-          to: `https://api.spaceflightnewsapi.net/documentation`,
+          to: `https://api.spaceflightnewsapi.net/v4/documentation`,
           label: 'Documentation',
+          position: 'left',
+        },
+        {
+          to: `https://api.spaceflightnewsapi.net/documentation`,
+          label: 'Documentation v3',
           position: 'left',
         },
         {
@@ -46,7 +51,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/spaceflightnewsapi/spaceflightnewsapi',
+          href: 'https://github.com/thespacedevs/spaceflightnewsapi',
           label: 'GitHub',
           position: 'right',
         },
@@ -60,7 +65,7 @@ module.exports = {
           items: [
             {
               label: 'Documentation',
-              to: `https://api.spaceflightnewsapi.net/documentation`,
+              to: `https://api.spaceflightnewsapi.net/v4/documentation`,
             },
           ],
         },
@@ -86,7 +91,7 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/spaceflightnewsapi/spaceflightnewsapi',
+              href: 'https://github.com/thespacedevs/spaceflightnewsapi',
             },
             {
               label: 'The Space Devs',
