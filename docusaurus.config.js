@@ -100,7 +100,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Spaceflight News API. Built with Docusaurus and Strapi.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Spaceflight News API & The Space Devs.`,
     },
   },
   presets: [
