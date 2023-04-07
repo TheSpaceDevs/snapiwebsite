@@ -26,7 +26,7 @@ module.exports = {
       items: [
         {
           to: `https://api.spaceflightnewsapi.net/v4/documentation`,
-          label: 'Documentation',
+          label: 'Documentation (Beta)',
           position: 'left',
         },
         {
@@ -64,7 +64,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Documentation',
+              label: 'Documentation (Beta)',
               to: `https://api.spaceflightnewsapi.net/v4/documentation`,
             },
           ],
