@@ -86,14 +86,6 @@
     ]
   },
   {
-    "name": "Rocket Launches Today",
-    "image": "https://rocketlaunchestoday.space/static/media/RLT.png",
-    "website": "https://rocketlaunchestoday.space",
-    "platforms": [
-      "Web"
-    ]
-  },
-  {
     "name": "Shuttle",
     "image": "https://shuttle-lyart.vercel.app/static/media/Shuttle.ae0dd626.png",
     "website": "https://shuttle-lyart.vercel.app",
