@@ -61,17 +61,8 @@
     ]
   },
   {
-    "name": "Nextlaunch",
-    "image": "https://media.discordapp.net/attachments/762559078719291403/846766115236347933/Icon-red.jpg",
-    "website": "https://github.com/Nextlaunch/CLI",
-    "platforms": [
-      "Discord",
-      "CLI"
-    ]
-  },
-  {
     "name": "Space Dawn",
-    "image": "https://play-lh.googleusercontent.com/Z5uZ_gbwkUjepYUcRbmdJWN8cLhfnq2dcTT0E2xjVBjpGNDSE4rCyzTie2wkOELNYg=s180-rw",
+    "image": "https://play-lh.googleusercontent.com/Z5uZ_gbwkUjepYUcRbmdJWN8cLhfnq2dcTT0E2xjVBjpGNDSE4rCyzTie2wkOELNYg=w2500-h500-rw",
     "website": "https://play.google.com/store/apps/details?id=com.raghav.spacedawn",
     "platforms": [
       "Android"
@@ -83,14 +74,6 @@
     "website": "https://t-minus.space/",
     "platforms": [
       "iOS"
-    ]
-  },
-  {
-    "name": "Rocket Launches Today",
-    "image": "https://rocketlaunchestoday.space/static/media/RLT.png",
-    "website": "https://rocketlaunchestoday.space",
-    "platforms": [
-      "Web"
     ]
   },
   {
