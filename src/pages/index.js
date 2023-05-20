@@ -78,8 +78,8 @@ function Home() {
                 'button button--outline button--secondary button--lg',
                 styles.getStarted,
               )}
-              to='https://api.spaceflightnewsapi.net/v4/documentation'>
-              Get Started v4 (beta)
+              to='https://api.spaceflightnewsapi.net/v4/docs'>
+              Get Started v4
             </Link>
           </div>
         </div>
