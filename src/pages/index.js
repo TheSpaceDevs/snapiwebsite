@@ -79,7 +79,7 @@ function Home() {
                 styles.getStarted,
               )}
               to='https://api.spaceflightnewsapi.net/v4/docs'>
-              Get Started v4
+              Get Started
             </Link>
           </div>
         </div>
