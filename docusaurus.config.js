@@ -30,11 +30,6 @@ module.exports = {
           position: 'left',
         },
         {
-          to: `https://api.spaceflightnewsapi.net/documentation`,
-          label: 'Documentation v3',
-          position: 'left',
-        },
-        {
           to: 'users/',
           activeBasePath: 'users',
           label: 'Users',
