@@ -159,5 +159,13 @@
       "Android",
       "iOS"
     ]
+  },
+  {
+    "name": "AboveYou",
+    "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/e8/70/f7/e870f7c5-9526-c7c5-70cf-c293709db79e/AppIcon-0-1x_U007emarketing-0-10-0-85-220.png/460x0w.webp",
+    "website": "https://apps.apple.com/in/app/aboveyou/id6470134223",
+    "platforms": [
+      "iOS"
+    ]
   }
 ]
