@@ -167,5 +167,14 @@
     "platforms": [
       "iOS"
     ]
+  },
+  {
+    "name": "Horizon",
+    "image": "https://cdn.discordapp.com/attachments/762559078719291403/1224254258296258580/dsdsdsdsdsds.png?ex=66260d20&is=66139820&hm=cd9b20c3468ac3991db8ed362ad885183626da257e00cb08a2239035b016a720&",
+    "website": "https://discord.com/application-directory/1183177251316047983",
+    "platforms": [
+      "Bot",
+      "Discord"
+    ]
   }
 ]
