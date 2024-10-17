@@ -72,8 +72,8 @@ module.exports = {
               href: 'https://discord.gg/p7ntkNA',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/the_snapi',
+              label: 'X',
+              href: 'https://x.com/derkweijers',
             },
             {
               label: 'Reddit',
