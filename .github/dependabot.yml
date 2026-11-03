@@ -15,7 +15,10 @@ updates:
       package-updates:
         applies-to: version-updates
         patterns: ["*"]
-        
+      security-updates:
+        applies-to: security-updates
+        patterns: ["*"]
+
   - package-ecosystem: "github-actions"
     directory: "/"
     assignees:
